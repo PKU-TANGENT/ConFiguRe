@@ -43,20 +43,27 @@ A sample data point in the json file is as follows:
 ConFiguRe includes 4,192 fragments and 9,010 figurative units. Train, valid and test set is split according to the proportion of 7:1:2. Detailed information for each figure type is demonstrated below:
 
 <p align="center">
-  <img src="https://github.com/PKU-TANGENT/ConFiguRe/blob/main/figures/corpusInfo.png" width="450" alt="statistics">
+  <img src="./figures/corpusInfo.png" width="450" alt="statistics">
 </p>
 
-## Model 
+## Environment
+### Overall Information
+- `transformers` version: 4.18.0
+- Platform: Linux-5.4.0-124-generic-x86_64-with-glibc2.17
+- Python version: 3.8.13
+- Huggingface_hub version: 0.5.1
+- PyTorch version (GPU?): 1.11.0+cu113 (True)
 
-### Requirement
-
-Run the following script to install the remaining dependencies,
-
-```
+### Reproduction
+```bash
+conda env create -n configure python=3.8.13 -y
 pip install -r requirements.txt
 ```
+## Code Layout
+### Hydra Config
+We leverage the [hydra module](https://hydra.cc/) to store hyperparameters with respect to each model, to enable auto-logging and to modularize our repo. It is helpful to have a basic idea of the hydra configuration style. 
 
-### Experimental Results
+## Experimental Results
 
 ## Citation
 

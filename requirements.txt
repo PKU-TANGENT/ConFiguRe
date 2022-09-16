@@ -1,0 +1,10 @@
+# python version -> 3.8.13, should work for other python versions as well
+# torch -> 1.11.0 + cuda 11.3
+--extra-index-url https://download.pytorch.org/whl/cu113 
+torch==1.11.0+cu113
+transformers==4.18.0
+datasets==2.1.0
+huggingface-hub==0.5.1
+# for debugging purposes only, uncommente the following line
+# debugpy==1.6.0
+hydra-core==1.1.2
