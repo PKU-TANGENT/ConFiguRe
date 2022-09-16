@@ -1,4 +1,4 @@
-# ConFiguRe: Exploring Discourse-level Chinese Figures of Speech
+# ConFiguRe
 
 This repository presents the dataset and baseline implementation for the COLING 2022 long paper (oral): "ConFiguRe: Exploring Discourse-level Chinese Figures of Speech".
 
@@ -23,13 +23,13 @@ A sample data point in the json file is as follows:
         "units": [
             {
                 "figurativeUnit": "在阳光照耀之下，雪也一粒一粒地放起光来了，",
-                "fos": "夸张" (Hyperbole),
+                "fos": "夸张 (Hyperbole)",
                 "begin": 44,
                 "end": 65
             },
             {
                 "figurativeUnit": "在这时候会飞出来觅食振翎，谈天说地般吱吱地叫个不休。",
-                "fos": "比拟" (Personification),
+                "fos": "比拟 (Personification)",
                 "begin": 74,
                 "end": 100
             }
@@ -66,6 +66,7 @@ If you use ConFiguRe in your work, please cite our paper:
 
 If you have any questions, feel free to contact
 
-- [dwzhu@pku.edu.cn;](dwzhu@pku.edu.cn)
+- [dwzhu@pku.edu.cn;](mailto:dwzhu@pku.edu.cn)
 
-- [lisujian@pku.edu.cn;](lisujian@pku.edu.cn)
+- [lisujian@pku.edu.cn;](mailto:lisujian@pku.edu.cn)
+
