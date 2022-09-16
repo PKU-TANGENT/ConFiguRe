@@ -1,0 +1,145 @@
+[Sat May 14 14:03:34 2022|main.py|INFO] Progress| Parse args succeed!
+[Sat May 14 14:03:35 2022|main.py|INFO] Progress| Load Bert config succeed!
+[Sat May 14 14:03:35 2022|main.py|INFO] Progress| Task setup succeed!
+[Sat May 14 14:03:42 2022|main.py|INFO] Progress| Load Bert tokenizer succeed!
+[Sat May 14 14:03:48 2022|DatasetForExtraction.py|INFO] train size: 2934
+[Sat May 14 14:03:48 2022|DatasetForExtraction.py|INFO] valid size: 419
+[Sat May 14 14:03:49 2022|DatasetForExtraction.py|INFO] test size: 839
+[Sat May 14 14:04:06 2022|main.py|INFO] Progress| Load Bert model succeed!
+[Sat May 14 14:04:06 2022|main.py|INFO] Progress| Load Optimizer AdamW succeed!
+[Sat May 14 14:04:06 2022|main.py|INFO] Progress| Load Accelerator succeed!
+[Sat May 14 14:04:06 2022|TrainExtraction.py|INFO] Initial Evaluation Result
+[Sat May 14 14:04:19 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P:  2.09 | R: 14.57 | F1:  3.65
+[Sat May 14 14:04:19 2022|TrainExtraction.py|INFO] epoch 0, iter 0, loss = 1.0520998239517212, lr=1e-05
+[Sat May 14 14:04:36 2022|TrainExtraction.py|INFO] epoch 0, iter 50, loss = 0.34460049867630005, lr=9.86413043478261e-06
+[Sat May 14 14:04:51 2022|TrainExtraction.py|INFO] epoch 0, iter 100, loss = 0.27991756796836853, lr=9.728260869565218e-06
+[Sat May 14 14:05:08 2022|TrainExtraction.py|INFO] epoch 0, iter 150, loss = 0.19234450161457062, lr=9.592391304347827e-06
+[Sat May 14 14:05:18 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 0:
+[Sat May 14 14:05:31 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 38.49 | R: 11.31 | F1: 17.48
+[Sat May 14 14:05:31 2022|TrainExtraction.py|INFO] Saving model for checkpoint 0
+[Sat May 14 14:05:32 2022|TrainExtraction.py|INFO] epoch 1, iter 0, loss = 0.2703918218612671, lr=9.5e-06
+[Sat May 14 14:05:48 2022|TrainExtraction.py|INFO] epoch 1, iter 50, loss = 0.25200676918029785, lr=9.36413043478261e-06
+[Sat May 14 14:06:05 2022|TrainExtraction.py|INFO] epoch 1, iter 100, loss = 0.24363826215267181, lr=9.228260869565218e-06
+[Sat May 14 14:06:21 2022|TrainExtraction.py|INFO] epoch 1, iter 150, loss = 0.1597020924091339, lr=9.092391304347827e-06
+[Sat May 14 14:06:31 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 1:
+[Sat May 14 14:06:44 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 38.66 | R: 15.50 | F1: 22.13
+[Sat May 14 14:06:44 2022|TrainExtraction.py|INFO] Saving model for checkpoint 1
+[Sat May 14 14:06:48 2022|TrainExtraction.py|INFO] epoch 2, iter 0, loss = 0.2302428036928177, lr=9e-06
+[Sat May 14 14:07:04 2022|TrainExtraction.py|INFO] epoch 2, iter 50, loss = 0.21136993169784546, lr=8.864130434782609e-06
+[Sat May 14 14:07:20 2022|TrainExtraction.py|INFO] epoch 2, iter 100, loss = 0.22523941099643707, lr=8.728260869565218e-06
+[Sat May 14 14:07:36 2022|TrainExtraction.py|INFO] epoch 2, iter 150, loss = 0.13541291654109955, lr=8.592391304347826e-06
+[Sat May 14 14:07:47 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 2:
+[Sat May 14 14:07:58 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 38.29 | R: 19.81 | F1: 26.11
+[Sat May 14 14:07:58 2022|TrainExtraction.py|INFO] Saving model for checkpoint 2
+[Sat May 14 14:08:02 2022|TrainExtraction.py|INFO] epoch 3, iter 0, loss = 0.1924515962600708, lr=8.5e-06
+[Sat May 14 14:08:18 2022|TrainExtraction.py|INFO] epoch 3, iter 50, loss = 0.18835186958312988, lr=8.364130434782609e-06
+[Sat May 14 14:08:34 2022|TrainExtraction.py|INFO] epoch 3, iter 100, loss = 0.20517678558826447, lr=8.228260869565217e-06
+[Sat May 14 14:08:51 2022|TrainExtraction.py|INFO] epoch 3, iter 150, loss = 0.11396396905183792, lr=8.092391304347826e-06
+[Sat May 14 14:09:01 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 3:
+[Sat May 14 14:09:13 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 36.14 | R: 22.03 | F1: 27.37
+[Sat May 14 14:09:13 2022|TrainExtraction.py|INFO] Saving model for checkpoint 3
+[Sat May 14 14:09:17 2022|TrainExtraction.py|INFO] epoch 4, iter 0, loss = 0.18192549049854279, lr=8.000000000000001e-06
+[Sat May 14 14:09:34 2022|TrainExtraction.py|INFO] epoch 4, iter 50, loss = 0.1395329385995865, lr=7.86413043478261e-06
+[Sat May 14 14:09:50 2022|TrainExtraction.py|INFO] epoch 4, iter 100, loss = 0.17582447826862335, lr=7.728260869565219e-06
+[Sat May 14 14:10:06 2022|TrainExtraction.py|INFO] epoch 4, iter 150, loss = 0.09725698083639145, lr=7.592391304347827e-06
+[Sat May 14 14:10:16 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 4:
+[Sat May 14 14:10:28 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 34.68 | R: 22.96 | F1: 27.63
+[Sat May 14 14:10:28 2022|TrainExtraction.py|INFO] Saving model for checkpoint 4
+[Sat May 14 14:10:32 2022|TrainExtraction.py|INFO] epoch 5, iter 0, loss = 0.15267254412174225, lr=7.500000000000001e-06
+[Sat May 14 14:10:49 2022|TrainExtraction.py|INFO] epoch 5, iter 50, loss = 0.13864223659038544, lr=7.364130434782609e-06
+[Sat May 14 14:11:05 2022|TrainExtraction.py|INFO] epoch 5, iter 100, loss = 0.15774177014827728, lr=7.228260869565218e-06
+[Sat May 14 14:11:21 2022|TrainExtraction.py|INFO] epoch 5, iter 150, loss = 0.08721251785755157, lr=7.092391304347826e-06
+[Sat May 14 14:11:31 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 5:
+[Sat May 14 14:11:43 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 34.09 | R: 22.73 | F1: 27.27
+[Sat May 14 14:11:43 2022|TrainExtraction.py|INFO] epoch 6, iter 0, loss = 0.12757229804992676, lr=7e-06
+[Sat May 14 14:11:59 2022|TrainExtraction.py|INFO] epoch 6, iter 50, loss = 0.11542364954948425, lr=6.864130434782609e-06
+[Sat May 14 14:12:15 2022|TrainExtraction.py|INFO] epoch 6, iter 100, loss = 0.12466786801815033, lr=6.728260869565217e-06
+[Sat May 14 14:12:31 2022|TrainExtraction.py|INFO] epoch 6, iter 150, loss = 0.07372959703207016, lr=6.592391304347827e-06
+[Sat May 14 14:12:42 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 6:
+[Sat May 14 14:12:53 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 33.79 | R: 25.64 | F1: 29.16
+[Sat May 14 14:12:53 2022|TrainExtraction.py|INFO] Saving model for checkpoint 6
+[Sat May 14 14:12:57 2022|TrainExtraction.py|INFO] epoch 7, iter 0, loss = 0.10093853622674942, lr=6.5000000000000004e-06
+[Sat May 14 14:13:13 2022|TrainExtraction.py|INFO] epoch 7, iter 50, loss = 0.10144772380590439, lr=6.364130434782609e-06
+[Sat May 14 14:13:29 2022|TrainExtraction.py|INFO] epoch 7, iter 100, loss = 0.11808352172374725, lr=6.228260869565218e-06
+[Sat May 14 14:13:45 2022|TrainExtraction.py|INFO] epoch 7, iter 150, loss = 0.07417695224285126, lr=6.0923913043478266e-06
+[Sat May 14 14:13:55 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 7:
+[Sat May 14 14:14:06 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 30.58 | R: 28.90 | F1: 29.72
+[Sat May 14 14:14:06 2022|TrainExtraction.py|INFO] Saving model for checkpoint 7
+[Sat May 14 14:14:11 2022|TrainExtraction.py|INFO] epoch 8, iter 0, loss = 0.0962519571185112, lr=6e-06
+[Sat May 14 14:14:27 2022|TrainExtraction.py|INFO] epoch 8, iter 50, loss = 0.08350041508674622, lr=5.864130434782609e-06
+[Sat May 14 14:14:43 2022|TrainExtraction.py|INFO] epoch 8, iter 100, loss = 0.15609346330165863, lr=5.7282608695652176e-06
+[Sat May 14 14:14:59 2022|TrainExtraction.py|INFO] epoch 8, iter 150, loss = 0.05753858759999275, lr=5.592391304347826e-06
+[Sat May 14 14:15:09 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 8:
+[Sat May 14 14:15:21 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 24.34 | R: 31.00 | F1: 27.27
+[Sat May 14 14:15:22 2022|TrainExtraction.py|INFO] epoch 9, iter 0, loss = 0.11951034516096115, lr=5.500000000000001e-06
+[Sat May 14 14:15:37 2022|TrainExtraction.py|INFO] epoch 9, iter 50, loss = 0.1055557131767273, lr=5.364130434782609e-06
+[Sat May 14 14:15:53 2022|TrainExtraction.py|INFO] epoch 9, iter 100, loss = 0.09049510955810547, lr=5.228260869565218e-06
+[Sat May 14 14:16:09 2022|TrainExtraction.py|INFO] epoch 9, iter 150, loss = 0.05159009248018265, lr=5.092391304347827e-06
+[Sat May 14 14:16:20 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 9:
+[Sat May 14 14:16:32 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 30.18 | R: 29.02 | F1: 29.59
+[Sat May 14 14:16:32 2022|TrainExtraction.py|INFO] epoch 10, iter 0, loss = 0.07704610377550125, lr=5e-06
+[Sat May 14 14:16:48 2022|TrainExtraction.py|INFO] epoch 10, iter 50, loss = 0.07307900488376617, lr=4.864130434782609e-06
+[Sat May 14 14:17:04 2022|TrainExtraction.py|INFO] epoch 10, iter 100, loss = 0.0669831782579422, lr=4.728260869565218e-06
+[Sat May 14 14:17:20 2022|TrainExtraction.py|INFO] epoch 10, iter 150, loss = 0.045249104499816895, lr=4.5923913043478265e-06
+[Sat May 14 14:17:30 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 10:
+[Sat May 14 14:17:42 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 29.58 | R: 29.72 | F1: 29.65
+[Sat May 14 14:17:42 2022|TrainExtraction.py|INFO] epoch 11, iter 0, loss = 0.06920638680458069, lr=4.5e-06
+[Sat May 14 14:17:58 2022|TrainExtraction.py|INFO] epoch 11, iter 50, loss = 0.051774851977825165, lr=4.364130434782609e-06
+[Sat May 14 14:18:14 2022|TrainExtraction.py|INFO] epoch 11, iter 100, loss = 0.060907039791345596, lr=4.2282608695652175e-06
+[Sat May 14 14:18:30 2022|TrainExtraction.py|INFO] epoch 11, iter 150, loss = 0.044690076261758804, lr=4.092391304347826e-06
+[Sat May 14 14:18:41 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 11:
+[Sat May 14 14:18:52 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 30.25 | R: 28.55 | F1: 29.38
+[Sat May 14 14:18:52 2022|TrainExtraction.py|INFO] epoch 12, iter 0, loss = 0.07043366134166718, lr=4.000000000000001e-06
+[Sat May 14 14:19:09 2022|TrainExtraction.py|INFO] epoch 12, iter 50, loss = 0.045217692852020264, lr=3.864130434782609e-06
+[Sat May 14 14:19:25 2022|TrainExtraction.py|INFO] epoch 12, iter 100, loss = 0.05969123914837837, lr=3.7282608695652177e-06
+[Sat May 14 14:19:41 2022|TrainExtraction.py|INFO] epoch 12, iter 150, loss = 0.05351658910512924, lr=3.5923913043478264e-06
+[Sat May 14 14:19:51 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 12:
+[Sat May 14 14:20:03 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 32.23 | R: 28.44 | F1: 30.22
+[Sat May 14 14:20:03 2022|TrainExtraction.py|INFO] Saving model for checkpoint 12
+[Sat May 14 14:20:07 2022|TrainExtraction.py|INFO] epoch 13, iter 0, loss = 0.05188809335231781, lr=3.5e-06
+[Sat May 14 14:20:23 2022|TrainExtraction.py|INFO] epoch 13, iter 50, loss = 0.04938902705907822, lr=3.3641304347826087e-06
+[Sat May 14 14:20:39 2022|TrainExtraction.py|INFO] epoch 13, iter 100, loss = 0.047270938754081726, lr=3.2282608695652178e-06
+[Sat May 14 14:20:55 2022|TrainExtraction.py|INFO] epoch 13, iter 150, loss = 0.04988781735301018, lr=3.0923913043478265e-06
+[Sat May 14 14:21:06 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 13:
+[Sat May 14 14:21:18 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 32.38 | R: 28.90 | F1: 30.54
+[Sat May 14 14:21:18 2022|TrainExtraction.py|INFO] Saving model for checkpoint 13
+[Sat May 14 14:21:22 2022|TrainExtraction.py|INFO] epoch 14, iter 0, loss = 0.05002278462052345, lr=3e-06
+[Sat May 14 14:21:38 2022|TrainExtraction.py|INFO] epoch 14, iter 50, loss = 0.0448683463037014, lr=2.8641304347826088e-06
+[Sat May 14 14:21:54 2022|TrainExtraction.py|INFO] epoch 14, iter 100, loss = 0.05856635421514511, lr=2.7282608695652175e-06
+[Sat May 14 14:22:10 2022|TrainExtraction.py|INFO] epoch 14, iter 150, loss = 0.042200732976198196, lr=2.592391304347826e-06
+[Sat May 14 14:22:21 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 14:
+[Sat May 14 14:22:32 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 28.90 | R: 30.42 | F1: 29.64
+[Sat May 14 14:22:32 2022|TrainExtraction.py|INFO] epoch 15, iter 0, loss = 0.05027991905808449, lr=2.5e-06
+[Sat May 14 14:22:49 2022|TrainExtraction.py|INFO] epoch 15, iter 50, loss = 0.03865989297628403, lr=2.364130434782609e-06
+[Sat May 14 14:23:05 2022|TrainExtraction.py|INFO] epoch 15, iter 100, loss = 0.057085487991571426, lr=2.2282608695652176e-06
+[Sat May 14 14:23:21 2022|TrainExtraction.py|INFO] epoch 15, iter 150, loss = 0.03294451907277107, lr=2.0923913043478263e-06
+[Sat May 14 14:23:31 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 15:
+[Sat May 14 14:23:42 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 29.82 | R: 30.30 | F1: 30.06
+[Sat May 14 14:23:43 2022|TrainExtraction.py|INFO] epoch 16, iter 0, loss = 0.03969516232609749, lr=2.0000000000000003e-06
+[Sat May 14 14:23:59 2022|TrainExtraction.py|INFO] epoch 16, iter 50, loss = 0.04033324867486954, lr=1.8641304347826088e-06
+[Sat May 14 14:24:15 2022|TrainExtraction.py|INFO] epoch 16, iter 100, loss = 0.03553849831223488, lr=1.7282608695652175e-06
+[Sat May 14 14:24:31 2022|TrainExtraction.py|INFO] epoch 16, iter 150, loss = 0.02074326016008854, lr=1.5923913043478262e-06
+[Sat May 14 14:24:41 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 16:
+[Sat May 14 14:24:52 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 33.85 | R: 30.65 | F1: 32.17
+[Sat May 14 14:24:52 2022|TrainExtraction.py|INFO] Saving model for checkpoint 16
+[Sat May 14 14:24:57 2022|TrainExtraction.py|INFO] epoch 17, iter 0, loss = 0.048667024821043015, lr=1.5e-06
+[Sat May 14 14:25:13 2022|TrainExtraction.py|INFO] epoch 17, iter 50, loss = 0.03716161847114563, lr=1.3641304347826087e-06
+[Sat May 14 14:25:28 2022|TrainExtraction.py|INFO] epoch 17, iter 100, loss = 0.035990867763757706, lr=1.2282608695652175e-06
+[Sat May 14 14:25:44 2022|TrainExtraction.py|INFO] epoch 17, iter 150, loss = 0.02158294804394245, lr=1.0923913043478262e-06
+[Sat May 14 14:25:55 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 17:
+[Sat May 14 14:26:05 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 32.95 | R: 29.84 | F1: 31.31
+[Sat May 14 14:26:06 2022|TrainExtraction.py|INFO] epoch 18, iter 0, loss = 0.036663785576820374, lr=1.0000000000000002e-06
+[Sat May 14 14:26:21 2022|TrainExtraction.py|INFO] epoch 18, iter 50, loss = 0.03484863415360451, lr=8.641304347826088e-07
+[Sat May 14 14:26:37 2022|TrainExtraction.py|INFO] epoch 18, iter 100, loss = 0.044227857142686844, lr=7.282608695652174e-07
+[Sat May 14 14:26:54 2022|TrainExtraction.py|INFO] epoch 18, iter 150, loss = 0.021516283974051476, lr=5.923913043478261e-07
+[Sat May 14 14:27:04 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 18:
+[Sat May 14 14:27:15 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 33.12 | R: 29.60 | F1: 31.26
+[Sat May 14 14:27:15 2022|TrainExtraction.py|INFO] epoch 19, iter 0, loss = 0.039657048881053925, lr=5.000000000000001e-07
+[Sat May 14 14:27:32 2022|TrainExtraction.py|INFO] epoch 19, iter 50, loss = 0.02887563966214657, lr=3.641304347826087e-07
+[Sat May 14 14:27:48 2022|TrainExtraction.py|INFO] epoch 19, iter 100, loss = 0.03613801300525665, lr=2.2826086956521742e-07
+[Sat May 14 14:28:04 2022|TrainExtraction.py|INFO] epoch 19, iter 150, loss = 0.021723054349422455, lr=9.23913043478261e-08
+[Sat May 14 14:28:14 2022|TrainExtraction.py|INFO] Evaluation Result on epoch 19:
+[Sat May 14 14:28:26 2022|MetricForExtraction.py|INFO] Overall performance | Total num:  858 | P: 32.43 | R: 29.14 | F1: 30.69
+[Sat May 14 14:28:26 2022|main.py|INFO] Progress| Train Complete!
+[Sat May 14 14:28:26 2022|TrainExtraction.py|INFO] Load best checkpoint from epoch 16
+[Sat May 14 14:28:48 2022|MetricForExtraction.py|INFO] Overall performance | Total num: 1810 | P: 34.06 | R: 29.23 | F1: 31.46

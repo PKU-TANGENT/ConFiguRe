@@ -1,0 +1,19 @@
+task: "CRF" 
+seed: 2020
+batch_size: 16
+num_epochs: 30
+crf: True
+lr: 1.e-5
+classifier_lr: 1.e-4
+crf_lr: 1.e-3
+model_init_args: 
+  - config
+  - args
+optimizer:
+  - params: "model.bert.parameters()"
+    lr: ${model_args.lr}
+  - params: "model.classifier.parameters()"
+    lr: ${model_args.classifier_lr}
+  - params: "model.crf.parameters()"
+    lr: ${model_args.crf_lr}
+  

@@ -1,0 +1,25 @@
+[Thu May 12 05:00:29 2022|main.py|INFO] Progress| Parse args succeed!
+[Thu May 12 05:00:30 2022|main.py|INFO] Progress| Load Bert config succeed!
+[Thu May 12 05:00:30 2022|main.py|INFO] Progress| Task setup succeed!
+[Thu May 12 05:00:37 2022|main.py|INFO] Progress| Load Bert tokenizer succeed!
+[Thu May 12 05:00:40 2022|DatasetForRecognition.py|INFO] train size: 2934
+[Thu May 12 05:00:40 2022|DatasetForRecognition.py|INFO] valid size: 419
+[Thu May 12 05:00:41 2022|DatasetForRecognition.py|INFO] test size: 839
+[Thu May 12 05:00:51 2022|main.py|INFO] Progress| Load Bert model succeed!
+[Thu May 12 05:00:51 2022|main.py|INFO] Progress| Load Optimizer AdamW succeed!
+[Thu May 12 05:00:51 2022|main.py|INFO] Progress| Load Accelerator succeed!
+[Thu May 12 05:00:51 2022|main.py|INFO] Progress| Load Accelerator succeed!
+[Thu May 12 05:00:52 2022|TrainRecognition.py|INFO] Load best checkpoint from epoch 18
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 比喻 | Num:  666 | P: 40.68 | R: 41.29 | F1: 40.98
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 比拟 | Num:  234 | P: 21.67 | R: 11.11 | F1: 14.69
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 借代 | Num:  121 | P:  6.35 | R:  3.31 | F1:  4.35
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 夸张 | Num:  142 | P:  6.60 | R:  4.93 | F1:  5.65
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 反语 | Num:    5 | P:  0.00 | R:  0.00 | F1:  0.00
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 通感 | Num:    9 | P:  0.00 | R:  0.00 | F1:  0.00
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 问语 | Num:  197 | P: 19.83 | R: 23.35 | F1: 21.45
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 排比 | Num:   96 | P: 38.53 | R: 43.75 | F1: 40.98
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 对偶 | Num:   69 | P: 13.16 | R: 14.49 | F1: 13.79
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 反复 | Num:  102 | P: 16.67 | R: 16.67 | F1: 16.67
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 对比 | Num:   58 | P: 18.18 | R: 10.34 | F1: 13.19
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] 引语 | Num:  111 | P: 40.22 | R: 33.33 | F1: 36.45
+[Thu May 12 05:01:04 2022|MetricForRecognition.py|INFO] Overall performance | Total num: 1810 | P: 29.21 | R: 25.97 | Micro F1: 27.49 | Macro F1: 17.35

@@ -1,0 +1,484 @@
+[Wed May 11 08:28:50 2022|main.py|INFO] Progress| Parse args succeed!
+[Wed May 11 08:28:51 2022|main.py|INFO] Progress| Load Bert config succeed!
+[Wed May 11 08:28:51 2022|main.py|INFO] Progress| Task setup succeed!
+[Wed May 11 08:28:58 2022|main.py|INFO] Progress| Load Bert tokenizer succeed!
+[Wed May 11 08:28:59 2022|DatasetForClassificationContext.py|INFO] train size: 6254
+[Wed May 11 08:28:59 2022|DatasetForClassificationContext.py|INFO] valid size: 886
+[Wed May 11 08:28:59 2022|DatasetForClassificationContext.py|INFO] test size: 1870
+[Wed May 11 08:29:16 2022|main.py|INFO] Progress| Load Bert model succeed!
+[Wed May 11 08:29:16 2022|main.py|INFO] Progress| Load Optimizer AdamW succeed!
+[Wed May 11 08:29:16 2022|main.py|INFO] Progress| Load Accelerator succeed!
+[Wed May 11 08:29:16 2022|TrainClassifier.py|INFO] Initial Evaluation Result
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P:  9.71 | R: 10.64 | F1: 10.15
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P:  3.95 | R:  4.35 | F1:  4.14
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P:  1.45 | R:  1.75 | F1:  1.59
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P:  6.11 | R: 62.90 | F1: 11.14
+[Wed May 11 08:29:23 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P:  5.98 | R:  5.98 | Micro F1:  5.98 | Macro F1:  2.25
+[Wed May 11 08:29:23 2022|TrainClassifier.py|INFO] epoch 0, iter 0, loss = 2.507216691970825, lr=1e-05
+[Wed May 11 08:29:36 2022|TrainClassifier.py|INFO] epoch 0, iter 50, loss = 1.9587947130203247, lr=9.93606138107417e-06
+[Wed May 11 08:29:46 2022|TrainClassifier.py|INFO] epoch 0, iter 100, loss = 1.677822232246399, lr=9.872122762148338e-06
+[Wed May 11 08:29:58 2022|TrainClassifier.py|INFO] epoch 0, iter 150, loss = 1.5415306091308594, lr=9.808184143222507e-06
+[Wed May 11 08:30:10 2022|TrainClassifier.py|INFO] epoch 0, iter 200, loss = 1.0127955675125122, lr=9.744245524296676e-06
+[Wed May 11 08:30:23 2022|TrainClassifier.py|INFO] epoch 0, iter 250, loss = 0.7921147346496582, lr=9.680306905370845e-06
+[Wed May 11 08:30:40 2022|TrainClassifier.py|INFO] epoch 0, iter 300, loss = 0.5305731296539307, lr=9.616368286445014e-06
+[Wed May 11 08:30:53 2022|TrainClassifier.py|INFO] epoch 0, iter 350, loss = 0.8352210521697998, lr=9.552429667519182e-06
+[Wed May 11 08:31:02 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 0:
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 77.08 | R: 87.91 | F1: 82.14
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 47.45 | R: 69.15 | F1: 56.28
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 65.71 | R: 33.33 | F1: 44.23
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 46.67 | R: 29.17 | F1: 35.90
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.02 | R: 95.65 | F1: 94.83
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.36 | R: 92.68 | F1: 89.41
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 59.09 | R: 70.27 | F1: 64.20
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 90.00 | R: 94.74 | F1: 92.31
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 66.67 | R:  8.70 | F1: 15.38
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 88.46 | R: 74.19 | F1: 80.70
+[Wed May 11 08:31:05 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 73.81 | R: 73.81 | Micro F1: 73.81 | Macro F1: 54.61
+[Wed May 11 08:31:05 2022|TrainClassifier.py|INFO] Saving model for checkpoint 0
+[Wed May 11 08:31:10 2022|TrainClassifier.py|INFO] epoch 1, iter 0, loss = 0.6290619969367981, lr=9.5e-06
+[Wed May 11 08:31:21 2022|TrainClassifier.py|INFO] epoch 1, iter 50, loss = 0.6608005166053772, lr=9.43606138107417e-06
+[Wed May 11 08:31:35 2022|TrainClassifier.py|INFO] epoch 1, iter 100, loss = 0.8059242963790894, lr=9.372122762148338e-06
+[Wed May 11 08:31:46 2022|TrainClassifier.py|INFO] epoch 1, iter 150, loss = 0.8555505275726318, lr=9.308184143222507e-06
+[Wed May 11 08:31:58 2022|TrainClassifier.py|INFO] epoch 1, iter 200, loss = 0.6207137107849121, lr=9.244245524296676e-06
+[Wed May 11 08:32:11 2022|TrainClassifier.py|INFO] epoch 1, iter 250, loss = 0.6032746434211731, lr=9.180306905370845e-06
+[Wed May 11 08:32:21 2022|TrainClassifier.py|INFO] epoch 1, iter 300, loss = 0.3445672392845154, lr=9.116368286445013e-06
+[Wed May 11 08:32:34 2022|TrainClassifier.py|INFO] epoch 1, iter 350, loss = 0.6245383024215698, lr=9.052429667519182e-06
+[Wed May 11 08:32:44 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 1:
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 82.52 | R: 87.91 | F1: 85.13
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 59.46 | R: 70.21 | F1: 64.39
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 70.00 | R: 50.72 | F1: 58.82
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 56.06 | R: 51.39 | F1: 53.62
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.87 | R: 96.52 | F1: 95.69
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 90.91 | R: 97.56 | F1: 94.12
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 60.42 | R: 78.38 | F1: 68.24
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 91.67 | R: 96.49 | F1: 94.02
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 60.00 | R: 39.13 | F1: 47.37
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 93.88 | R: 74.19 | F1: 82.88
+[Wed May 11 08:32:48 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.67 | R: 78.67 | Micro F1: 78.67 | Macro F1: 62.02
+[Wed May 11 08:32:48 2022|TrainClassifier.py|INFO] Saving model for checkpoint 1
+[Wed May 11 08:32:53 2022|TrainClassifier.py|INFO] epoch 2, iter 0, loss = 0.4228442311286926, lr=9e-06
+[Wed May 11 08:33:05 2022|TrainClassifier.py|INFO] epoch 2, iter 50, loss = 0.4577464759349823, lr=8.936061381074169e-06
+[Wed May 11 08:33:18 2022|TrainClassifier.py|INFO] epoch 2, iter 100, loss = 0.6207467913627625, lr=8.872122762148338e-06
+[Wed May 11 08:33:30 2022|TrainClassifier.py|INFO] epoch 2, iter 150, loss = 0.5575425028800964, lr=8.808184143222507e-06
+[Wed May 11 08:33:42 2022|TrainClassifier.py|INFO] epoch 2, iter 200, loss = 0.5432137250900269, lr=8.744245524296675e-06
+[Wed May 11 08:33:53 2022|TrainClassifier.py|INFO] epoch 2, iter 250, loss = 0.46451205015182495, lr=8.680306905370844e-06
+[Wed May 11 08:34:03 2022|TrainClassifier.py|INFO] epoch 2, iter 300, loss = 0.17178231477737427, lr=8.616368286445013e-06
+[Wed May 11 08:34:15 2022|TrainClassifier.py|INFO] epoch 2, iter 350, loss = 0.4534956216812134, lr=8.552429667519182e-06
+[Wed May 11 08:34:26 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 2:
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.88 | R: 89.87 | F1: 85.14
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 60.00 | R: 67.02 | F1: 63.32
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 70.00 | R: 50.72 | F1: 58.82
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 59.32 | R: 48.61 | F1: 53.44
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 95.69 | R: 96.52 | F1: 96.10
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 90.70 | R: 95.12 | F1: 92.86
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 62.50 | R: 81.08 | F1: 70.59
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 90.16 | R: 96.49 | F1: 93.22
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 69.23 | R: 39.13 | F1: 50.00
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 94.12 | R: 77.42 | F1: 84.96
+[Wed May 11 08:34:30 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 79.01 | R: 79.01 | Micro F1: 79.01 | Macro F1: 62.37
+[Wed May 11 08:34:30 2022|TrainClassifier.py|INFO] Saving model for checkpoint 2
+[Wed May 11 08:34:34 2022|TrainClassifier.py|INFO] epoch 3, iter 0, loss = 0.11595543473958969, lr=8.5e-06
+[Wed May 11 08:34:46 2022|TrainClassifier.py|INFO] epoch 3, iter 50, loss = 0.36433473229408264, lr=8.43606138107417e-06
+[Wed May 11 08:34:58 2022|TrainClassifier.py|INFO] epoch 3, iter 100, loss = 0.26368680596351624, lr=8.372122762148338e-06
+[Wed May 11 08:35:11 2022|TrainClassifier.py|INFO] epoch 3, iter 150, loss = 0.2890079915523529, lr=8.308184143222508e-06
+[Wed May 11 08:35:23 2022|TrainClassifier.py|INFO] epoch 3, iter 200, loss = 0.4360455274581909, lr=8.244245524296675e-06
+[Wed May 11 08:35:35 2022|TrainClassifier.py|INFO] epoch 3, iter 250, loss = 0.4019172787666321, lr=8.180306905370846e-06
+[Wed May 11 08:35:47 2022|TrainClassifier.py|INFO] epoch 3, iter 300, loss = 0.11441439390182495, lr=8.116368286445013e-06
+[Wed May 11 08:35:58 2022|TrainClassifier.py|INFO] epoch 3, iter 350, loss = 0.3162401616573334, lr=8.052429667519183e-06
+[Wed May 11 08:36:07 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 3:
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.18 | R: 88.56 | F1: 84.16
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 56.10 | R: 73.40 | F1: 63.59
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 82.05 | R: 46.38 | F1: 59.26
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 62.75 | R: 44.44 | F1: 52.03
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 93.33 | R: 97.39 | F1: 95.32
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 92.68 | R: 92.68 | F1: 92.68
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 61.70 | R: 78.38 | F1: 69.05
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 88.71 | R: 96.49 | F1: 92.44
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 64.29 | R: 39.13 | F1: 48.65
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 92.16 | R: 75.81 | F1: 83.19
+[Wed May 11 08:36:11 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.33 | R: 78.33 | Micro F1: 78.33 | Macro F1: 61.70
+[Wed May 11 08:36:11 2022|TrainClassifier.py|INFO] epoch 4, iter 0, loss = 0.12488731741905212, lr=8.000000000000001e-06
+[Wed May 11 08:36:22 2022|TrainClassifier.py|INFO] epoch 4, iter 50, loss = 0.14810778200626373, lr=7.93606138107417e-06
+[Wed May 11 08:36:35 2022|TrainClassifier.py|INFO] epoch 4, iter 100, loss = 0.18910151720046997, lr=7.872122762148339e-06
+[Wed May 11 08:36:46 2022|TrainClassifier.py|INFO] epoch 4, iter 150, loss = 0.09831014275550842, lr=7.808184143222508e-06
+[Wed May 11 08:36:58 2022|TrainClassifier.py|INFO] epoch 4, iter 200, loss = 0.3124711811542511, lr=7.744245524296677e-06
+[Wed May 11 08:37:10 2022|TrainClassifier.py|INFO] epoch 4, iter 250, loss = 0.4262429177761078, lr=7.680306905370845e-06
+[Wed May 11 08:37:21 2022|TrainClassifier.py|INFO] epoch 4, iter 300, loss = 0.06195336580276489, lr=7.616368286445014e-06
+[Wed May 11 08:37:33 2022|TrainClassifier.py|INFO] epoch 4, iter 350, loss = 0.13297565281391144, lr=7.552429667519182e-06
+[Wed May 11 08:37:43 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 4:
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.75 | R: 84.97 | F1: 82.80
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 53.17 | R: 71.28 | F1: 60.91
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 72.09 | R: 44.93 | F1: 55.36
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 57.63 | R: 47.22 | F1: 51.91
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.17 | R: 98.26 | F1: 96.17
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.89 | R: 97.56 | F1: 93.02
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 62.50 | R: 81.08 | F1: 70.59
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 88.71 | R: 96.49 | F1: 92.44
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 60.00 | R: 39.13 | F1: 47.37
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 97.83 | R: 72.58 | F1: 83.33
+[Wed May 11 08:37:46 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 77.20 | R: 77.20 | Micro F1: 77.20 | Macro F1: 61.16
+[Wed May 11 08:37:47 2022|TrainClassifier.py|INFO] epoch 5, iter 0, loss = 0.0894809141755104, lr=7.500000000000001e-06
+[Wed May 11 08:37:59 2022|TrainClassifier.py|INFO] epoch 5, iter 50, loss = 0.1079195961356163, lr=7.436061381074169e-06
+[Wed May 11 08:38:11 2022|TrainClassifier.py|INFO] epoch 5, iter 100, loss = 0.05275821313261986, lr=7.372122762148338e-06
+[Wed May 11 08:38:24 2022|TrainClassifier.py|INFO] epoch 5, iter 150, loss = 0.05054271221160889, lr=7.308184143222507e-06
+[Wed May 11 08:38:35 2022|TrainClassifier.py|INFO] epoch 5, iter 200, loss = 0.16489802300930023, lr=7.244245524296675e-06
+[Wed May 11 08:38:47 2022|TrainClassifier.py|INFO] epoch 5, iter 250, loss = 0.2780299186706543, lr=7.180306905370844e-06
+[Wed May 11 08:39:01 2022|TrainClassifier.py|INFO] epoch 5, iter 300, loss = 0.2343209683895111, lr=7.116368286445013e-06
+[Wed May 11 08:39:14 2022|TrainClassifier.py|INFO] epoch 5, iter 350, loss = 0.14790573716163635, lr=7.052429667519182e-06
+[Wed May 11 08:39:23 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 5:
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 84.14 | R: 84.97 | F1: 84.55
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 47.71 | R: 77.66 | F1: 59.11
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 75.00 | R: 47.83 | F1: 58.41
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 67.44 | R: 40.28 | F1: 50.43
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 91.80 | R: 97.39 | F1: 94.51
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.64 | R: 95.12 | F1: 91.76
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 65.22 | R: 81.08 | F1: 72.29
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 87.30 | R: 96.49 | F1: 91.67
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 69.23 | R: 39.13 | F1: 50.00
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 95.92 | R: 75.81 | F1: 84.68
+[Wed May 11 08:39:27 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 77.54 | R: 77.54 | Micro F1: 77.54 | Macro F1: 61.45
+[Wed May 11 08:39:27 2022|TrainClassifier.py|INFO] epoch 6, iter 0, loss = 0.05049847066402435, lr=7e-06
+[Wed May 11 08:39:38 2022|TrainClassifier.py|INFO] epoch 6, iter 50, loss = 0.05724341794848442, lr=6.9360613810741695e-06
+[Wed May 11 08:39:47 2022|TrainClassifier.py|INFO] epoch 6, iter 100, loss = 0.06510881334543228, lr=6.8721227621483375e-06
+[Wed May 11 08:39:58 2022|TrainClassifier.py|INFO] epoch 6, iter 150, loss = 0.04764435812830925, lr=6.808184143222507e-06
+[Wed May 11 08:40:09 2022|TrainClassifier.py|INFO] epoch 6, iter 200, loss = 0.05725599825382233, lr=6.744245524296675e-06
+[Wed May 11 08:40:21 2022|TrainClassifier.py|INFO] epoch 6, iter 250, loss = 0.0842851996421814, lr=6.680306905370845e-06
+[Wed May 11 08:40:33 2022|TrainClassifier.py|INFO] epoch 6, iter 300, loss = 0.04836474359035492, lr=6.616368286445013e-06
+[Wed May 11 08:40:43 2022|TrainClassifier.py|INFO] epoch 6, iter 350, loss = 0.04914628714323044, lr=6.552429667519182e-06
+[Wed May 11 08:40:53 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 6:
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 81.33 | R: 88.24 | F1: 84.64
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 55.56 | R: 69.15 | F1: 61.61
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 69.09 | R: 55.07 | F1: 61.29
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 62.00 | R: 43.06 | F1: 50.82
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 96.43 | R: 93.91 | F1: 95.15
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 63.04 | R: 78.38 | F1: 69.88
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 83.33 | R: 96.49 | F1: 89.43
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 60.00 | R: 39.13 | F1: 47.37
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 95.74 | R: 72.58 | F1: 82.57
+[Wed May 11 08:40:57 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 77.88 | R: 77.88 | Micro F1: 77.88 | Macro F1: 61.23
+[Wed May 11 08:40:57 2022|TrainClassifier.py|INFO] epoch 7, iter 0, loss = 0.03247116133570671, lr=6.5000000000000004e-06
+[Wed May 11 08:41:08 2022|TrainClassifier.py|INFO] epoch 7, iter 50, loss = 0.02589656226336956, lr=6.436061381074169e-06
+[Wed May 11 08:41:20 2022|TrainClassifier.py|INFO] epoch 7, iter 100, loss = 0.036014437675476074, lr=6.372122762148338e-06
+[Wed May 11 08:41:32 2022|TrainClassifier.py|INFO] epoch 7, iter 150, loss = 0.02195863053202629, lr=6.308184143222507e-06
+[Wed May 11 08:41:44 2022|TrainClassifier.py|INFO] epoch 7, iter 200, loss = 0.02357572317123413, lr=6.244245524296676e-06
+[Wed May 11 08:41:55 2022|TrainClassifier.py|INFO] epoch 7, iter 250, loss = 0.21583370864391327, lr=6.1803069053708445e-06
+[Wed May 11 08:42:07 2022|TrainClassifier.py|INFO] epoch 7, iter 300, loss = 0.015585142187774181, lr=6.116368286445013e-06
+[Wed May 11 08:42:18 2022|TrainClassifier.py|INFO] epoch 7, iter 350, loss = 0.039026543498039246, lr=6.052429667519182e-06
+[Wed May 11 08:42:28 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 7:
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.48 | R: 87.58 | F1: 83.88
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 51.82 | R: 75.53 | F1: 61.47
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 73.81 | R: 44.93 | F1: 55.86
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 67.39 | R: 43.06 | F1: 52.54
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.87 | R: 96.52 | F1: 95.69
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 57.50 | R: 62.16 | F1: 59.74
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.38 | R: 94.74 | F1: 89.26
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 58.33 | R: 30.43 | F1: 40.00
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 93.88 | R: 74.19 | F1: 82.88
+[Wed May 11 08:42:31 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 76.98 | R: 76.98 | Micro F1: 76.98 | Macro F1: 59.44
+[Wed May 11 08:42:31 2022|TrainClassifier.py|INFO] epoch 8, iter 0, loss = 0.014462693594396114, lr=6e-06
+[Wed May 11 08:42:42 2022|TrainClassifier.py|INFO] epoch 8, iter 50, loss = 0.025457626208662987, lr=5.93606138107417e-06
+[Wed May 11 08:42:53 2022|TrainClassifier.py|INFO] epoch 8, iter 100, loss = 0.015559764578938484, lr=5.872122762148338e-06
+[Wed May 11 08:43:05 2022|TrainClassifier.py|INFO] epoch 8, iter 150, loss = 0.018132518976926804, lr=5.808184143222507e-06
+[Wed May 11 08:43:16 2022|TrainClassifier.py|INFO] epoch 8, iter 200, loss = 0.03044336475431919, lr=5.744245524296675e-06
+[Wed May 11 08:43:28 2022|TrainClassifier.py|INFO] epoch 8, iter 250, loss = 0.05265277624130249, lr=5.680306905370845e-06
+[Wed May 11 08:43:40 2022|TrainClassifier.py|INFO] epoch 8, iter 300, loss = 0.015338470228016376, lr=5.616368286445013e-06
+[Wed May 11 08:43:52 2022|TrainClassifier.py|INFO] epoch 8, iter 350, loss = 0.01805904507637024, lr=5.552429667519183e-06
+[Wed May 11 08:44:01 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 8:
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.41 | R: 89.87 | F1: 84.88
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 58.88 | R: 67.02 | F1: 62.69
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 63.33 | R: 55.07 | F1: 58.91
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 63.64 | R: 38.89 | F1: 48.28
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 96.36 | R: 92.17 | F1: 94.22
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.67 | R: 95.12 | F1: 90.70
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 62.79 | R: 72.97 | F1: 67.50
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 82.09 | R: 96.49 | F1: 88.71
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 56.25 | R: 39.13 | F1: 46.15
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 94.12 | R: 77.42 | F1: 84.96
+[Wed May 11 08:44:04 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 77.65 | R: 77.65 | Micro F1: 77.65 | Macro F1: 60.58
+[Wed May 11 08:44:04 2022|TrainClassifier.py|INFO] epoch 9, iter 0, loss = 0.013700509443879128, lr=5.500000000000001e-06
+[Wed May 11 08:44:15 2022|TrainClassifier.py|INFO] epoch 9, iter 50, loss = 0.04801708087325096, lr=5.4360613810741695e-06
+[Wed May 11 08:44:26 2022|TrainClassifier.py|INFO] epoch 9, iter 100, loss = 0.03348333388566971, lr=5.372122762148338e-06
+[Wed May 11 08:44:37 2022|TrainClassifier.py|INFO] epoch 9, iter 150, loss = 0.041800275444984436, lr=5.308184143222507e-06
+[Wed May 11 08:44:48 2022|TrainClassifier.py|INFO] epoch 9, iter 200, loss = 0.019861316308379173, lr=5.244245524296676e-06
+[Wed May 11 08:45:01 2022|TrainClassifier.py|INFO] epoch 9, iter 250, loss = 0.037227433174848557, lr=5.180306905370845e-06
+[Wed May 11 08:45:12 2022|TrainClassifier.py|INFO] epoch 9, iter 300, loss = 0.0097565408796072, lr=5.1163682864450135e-06
+[Wed May 11 08:45:23 2022|TrainClassifier.py|INFO] epoch 9, iter 350, loss = 0.048730380833148956, lr=5.052429667519182e-06
+[Wed May 11 08:45:32 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 9:
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 79.18 | R: 88.24 | F1: 83.46
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 63.64 | R: 67.02 | F1: 65.28
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 67.27 | R: 53.62 | F1: 59.68
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 57.14 | R: 38.89 | F1: 46.28
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.92 | R: 97.39 | F1: 96.14
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.89 | R: 97.56 | F1: 93.02
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 64.44 | R: 78.38 | F1: 70.73
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 88.52 | R: 94.74 | F1: 91.53
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 55.56 | R: 43.48 | F1: 48.78
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.91 | R: 80.65 | F1: 85.47
+[Wed May 11 08:45:36 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.22 | R: 78.22 | Micro F1: 78.22 | Macro F1: 61.70
+[Wed May 11 08:45:36 2022|TrainClassifier.py|INFO] epoch 10, iter 0, loss = 0.01102624274790287, lr=5e-06
+[Wed May 11 08:45:47 2022|TrainClassifier.py|INFO] epoch 10, iter 50, loss = 0.025216825306415558, lr=4.936061381074169e-06
+[Wed May 11 08:45:59 2022|TrainClassifier.py|INFO] epoch 10, iter 100, loss = 0.026673242449760437, lr=4.872122762148338e-06
+[Wed May 11 08:46:09 2022|TrainClassifier.py|INFO] epoch 10, iter 150, loss = 0.1266709566116333, lr=4.808184143222507e-06
+[Wed May 11 08:46:22 2022|TrainClassifier.py|INFO] epoch 10, iter 200, loss = 0.015151533298194408, lr=4.744245524296676e-06
+[Wed May 11 08:46:33 2022|TrainClassifier.py|INFO] epoch 10, iter 250, loss = 0.020282616838812828, lr=4.6803069053708444e-06
+[Wed May 11 08:46:44 2022|TrainClassifier.py|INFO] epoch 10, iter 300, loss = 0.012175614014267921, lr=4.616368286445013e-06
+[Wed May 11 08:46:54 2022|TrainClassifier.py|INFO] epoch 10, iter 350, loss = 0.008949849754571915, lr=4.552429667519182e-06
+[Wed May 11 08:47:03 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 10:
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.06 | R: 89.22 | F1: 84.39
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 62.89 | R: 64.89 | F1: 63.87
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 63.64 | R: 60.87 | F1: 62.22
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 60.00 | R: 37.50 | F1: 46.15
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 96.40 | R: 93.04 | F1: 94.69
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 66.67 | R: 81.08 | F1: 73.17
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 79.71 | R: 96.49 | F1: 87.30
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 58.82 | R: 43.48 | F1: 50.00
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 95.92 | R: 75.81 | F1: 84.68
+[Wed May 11 08:47:07 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.10 | R: 78.10 | Micro F1: 78.10 | Macro F1: 61.54
+[Wed May 11 08:47:07 2022|TrainClassifier.py|INFO] epoch 11, iter 0, loss = 0.010228889063000679, lr=4.5e-06
+[Wed May 11 08:47:19 2022|TrainClassifier.py|INFO] epoch 11, iter 50, loss = 0.032826442271471024, lr=4.436061381074169e-06
+[Wed May 11 08:47:30 2022|TrainClassifier.py|INFO] epoch 11, iter 100, loss = 0.01409626193344593, lr=4.372122762148338e-06
+[Wed May 11 08:47:41 2022|TrainClassifier.py|INFO] epoch 11, iter 150, loss = 0.010141059756278992, lr=4.3081841432225065e-06
+[Wed May 11 08:47:52 2022|TrainClassifier.py|INFO] epoch 11, iter 200, loss = 0.019333159551024437, lr=4.244245524296675e-06
+[Wed May 11 08:48:03 2022|TrainClassifier.py|INFO] epoch 11, iter 250, loss = 0.03847198560833931, lr=4.180306905370844e-06
+[Wed May 11 08:48:14 2022|TrainClassifier.py|INFO] epoch 11, iter 300, loss = 0.007309991400688887, lr=4.116368286445013e-06
+[Wed May 11 08:48:25 2022|TrainClassifier.py|INFO] epoch 11, iter 350, loss = 0.012466629967093468, lr=4.052429667519182e-06
+[Wed May 11 08:48:34 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 11:
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 81.99 | R: 86.27 | F1: 84.08
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 62.14 | R: 68.09 | F1: 64.97
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 68.63 | R: 50.72 | F1: 58.33
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 53.12 | R: 47.22 | F1: 50.00
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 91.80 | R: 97.39 | F1: 94.51
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 63.04 | R: 78.38 | F1: 69.88
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 87.30 | R: 96.49 | F1: 91.67
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 56.25 | R: 39.13 | F1: 46.15
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.38 | R: 75.81 | F1: 82.46
+[Wed May 11 08:48:37 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 77.77 | R: 77.77 | Micro F1: 77.77 | Macro F1: 61.17
+[Wed May 11 08:48:38 2022|TrainClassifier.py|INFO] epoch 12, iter 0, loss = 0.007470523472875357, lr=4.000000000000001e-06
+[Wed May 11 08:48:48 2022|TrainClassifier.py|INFO] epoch 12, iter 50, loss = 0.01041076984256506, lr=3.9360613810741695e-06
+[Wed May 11 08:48:59 2022|TrainClassifier.py|INFO] epoch 12, iter 100, loss = 0.014949586242437363, lr=3.872122762148338e-06
+[Wed May 11 08:49:11 2022|TrainClassifier.py|INFO] epoch 12, iter 150, loss = 0.10511859506368637, lr=3.808184143222507e-06
+[Wed May 11 08:49:22 2022|TrainClassifier.py|INFO] epoch 12, iter 200, loss = 0.012677144259214401, lr=3.744245524296676e-06
+[Wed May 11 08:49:33 2022|TrainClassifier.py|INFO] epoch 12, iter 250, loss = 0.033146440982818604, lr=3.6803069053708447e-06
+[Wed May 11 08:49:44 2022|TrainClassifier.py|INFO] epoch 12, iter 300, loss = 0.01569545641541481, lr=3.6163682864450126e-06
+[Wed May 11 08:49:55 2022|TrainClassifier.py|INFO] epoch 12, iter 350, loss = 0.00771922804415226, lr=3.5524296675191814e-06
+[Wed May 11 08:50:04 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 12:
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 81.76 | R: 87.91 | F1: 84.72
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 64.08 | R: 70.21 | F1: 67.01
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 67.19 | R: 62.32 | F1: 64.66
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 62.00 | R: 43.06 | F1: 50.82
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 100.00 | R: 25.00 | F1: 40.00
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.12 | R: 97.39 | F1: 95.73
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 65.12 | R: 75.68 | F1: 70.00
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.62 | R: 96.49 | F1: 90.16
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 52.94 | R: 39.13 | F1: 45.00
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 95.83 | R: 74.19 | F1: 83.64
+[Wed May 11 08:50:08 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 79.12 | R: 79.12 | Micro F1: 79.12 | Macro F1: 67.69
+[Wed May 11 08:50:08 2022|TrainClassifier.py|INFO] Saving model for checkpoint 12
+[Wed May 11 08:50:12 2022|TrainClassifier.py|INFO] epoch 13, iter 0, loss = 0.007432741578668356, lr=3.5e-06
+[Wed May 11 08:50:23 2022|TrainClassifier.py|INFO] epoch 13, iter 50, loss = 0.017766127362847328, lr=3.4360613810741688e-06
+[Wed May 11 08:50:35 2022|TrainClassifier.py|INFO] epoch 13, iter 100, loss = 0.01073982659727335, lr=3.3721227621483376e-06
+[Wed May 11 08:50:46 2022|TrainClassifier.py|INFO] epoch 13, iter 150, loss = 0.007036175578832626, lr=3.3081841432225064e-06
+[Wed May 11 08:50:58 2022|TrainClassifier.py|INFO] epoch 13, iter 200, loss = 0.006817711982876062, lr=3.244245524296675e-06
+[Wed May 11 08:51:09 2022|TrainClassifier.py|INFO] epoch 13, iter 250, loss = 0.010823715478181839, lr=3.180306905370844e-06
+[Wed May 11 08:51:21 2022|TrainClassifier.py|INFO] epoch 13, iter 300, loss = 0.01207074522972107, lr=3.1163682864450128e-06
+[Wed May 11 08:51:32 2022|TrainClassifier.py|INFO] epoch 13, iter 350, loss = 0.010016223415732384, lr=3.0524296675191816e-06
+[Wed May 11 08:51:41 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 13:
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 81.65 | R: 87.25 | F1: 84.36
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 60.91 | R: 71.28 | F1: 65.69
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 72.34 | R: 49.28 | F1: 58.62
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 62.75 | R: 44.44 | F1: 52.03
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 100.00 | R: 25.00 | F1: 40.00
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 90.40 | R: 98.26 | F1: 94.17
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 63.64 | R: 75.68 | F1: 69.14
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 85.94 | R: 96.49 | F1: 90.91
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 52.94 | R: 39.13 | F1: 45.00
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.57 | R: 77.42 | F1: 83.48
+[Wed May 11 08:51:45 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.44 | R: 78.44 | Micro F1: 78.44 | Macro F1: 66.99
+[Wed May 11 08:51:45 2022|TrainClassifier.py|INFO] epoch 14, iter 0, loss = 0.0069168442860245705, lr=3e-06
+[Wed May 11 08:51:57 2022|TrainClassifier.py|INFO] epoch 14, iter 50, loss = 0.005262694787234068, lr=2.936061381074169e-06
+[Wed May 11 08:52:08 2022|TrainClassifier.py|INFO] epoch 14, iter 100, loss = 0.006520593073219061, lr=2.8721227621483377e-06
+[Wed May 11 08:52:20 2022|TrainClassifier.py|INFO] epoch 14, iter 150, loss = 0.0049639795906841755, lr=2.8081841432225065e-06
+[Wed May 11 08:52:31 2022|TrainClassifier.py|INFO] epoch 14, iter 200, loss = 0.005888132378458977, lr=2.7442455242966753e-06
+[Wed May 11 08:52:43 2022|TrainClassifier.py|INFO] epoch 14, iter 250, loss = 0.01226121000945568, lr=2.680306905370844e-06
+[Wed May 11 08:52:54 2022|TrainClassifier.py|INFO] epoch 14, iter 300, loss = 0.00546886445954442, lr=2.616368286445013e-06
+[Wed May 11 08:53:05 2022|TrainClassifier.py|INFO] epoch 14, iter 350, loss = 0.010126622393727303, lr=2.5524296675191817e-06
+[Wed May 11 08:53:13 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 14:
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 80.47 | R: 88.89 | F1: 84.47
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 60.75 | R: 69.15 | F1: 64.68
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 68.52 | R: 53.62 | F1: 60.16
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 68.18 | R: 41.67 | F1: 51.72
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 50.00 | R: 25.00 | F1: 33.33
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 94.07 | R: 96.52 | F1: 95.28
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.89 | R: 97.56 | F1: 93.02
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 63.41 | R: 70.27 | F1: 66.67
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.62 | R: 96.49 | F1: 90.16
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 52.94 | R: 39.13 | F1: 45.00
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.74 | R: 79.03 | F1: 84.48
+[Wed May 11 08:53:17 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.56 | R: 78.56 | Micro F1: 78.56 | Macro F1: 66.46
+[Wed May 11 08:53:17 2022|TrainClassifier.py|INFO] epoch 15, iter 0, loss = 0.0060579366981983185, lr=2.5e-06
+[Wed May 11 08:53:29 2022|TrainClassifier.py|INFO] epoch 15, iter 50, loss = 0.007194383069872856, lr=2.436061381074169e-06
+[Wed May 11 08:53:40 2022|TrainClassifier.py|INFO] epoch 15, iter 100, loss = 0.00791650079190731, lr=2.372122762148338e-06
+[Wed May 11 08:53:51 2022|TrainClassifier.py|INFO] epoch 15, iter 150, loss = 0.005944409873336554, lr=2.3081841432225066e-06
+[Wed May 11 08:54:02 2022|TrainClassifier.py|INFO] epoch 15, iter 200, loss = 0.004801199771463871, lr=2.2442455242966754e-06
+[Wed May 11 08:54:13 2022|TrainClassifier.py|INFO] epoch 15, iter 250, loss = 0.008393321186304092, lr=2.1803069053708442e-06
+[Wed May 11 08:54:25 2022|TrainClassifier.py|INFO] epoch 15, iter 300, loss = 0.005089540034532547, lr=2.116368286445013e-06
+[Wed May 11 08:54:37 2022|TrainClassifier.py|INFO] epoch 15, iter 350, loss = 0.004365930333733559, lr=2.052429667519182e-06
+[Wed May 11 08:54:46 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 15:
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 81.79 | R: 86.60 | F1: 84.13
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 61.86 | R: 63.83 | F1: 62.83
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 65.57 | R: 57.97 | F1: 61.54
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 60.00 | R: 45.83 | F1: 51.97
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 100.00 | R: 25.00 | F1: 40.00
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 91.80 | R: 97.39 | F1: 94.51
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 64.29 | R: 72.97 | F1: 68.35
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.62 | R: 96.49 | F1: 90.16
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 52.94 | R: 39.13 | F1: 45.00
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.91 | R: 80.65 | F1: 85.47
+[Wed May 11 08:54:49 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.22 | R: 78.22 | Micro F1: 78.22 | Macro F1: 67.04
+[Wed May 11 08:54:49 2022|TrainClassifier.py|INFO] epoch 16, iter 0, loss = 0.0414617545902729, lr=2.0000000000000003e-06
+[Wed May 11 08:55:01 2022|TrainClassifier.py|INFO] epoch 16, iter 50, loss = 0.005288560874760151, lr=1.936061381074169e-06
+[Wed May 11 08:55:13 2022|TrainClassifier.py|INFO] epoch 16, iter 100, loss = 0.024767059832811356, lr=1.872122762148338e-06
+[Wed May 11 08:55:26 2022|TrainClassifier.py|INFO] epoch 16, iter 150, loss = 0.004595301579684019, lr=1.8081841432225063e-06
+[Wed May 11 08:55:38 2022|TrainClassifier.py|INFO] epoch 16, iter 200, loss = 0.005465272348374128, lr=1.7442455242966751e-06
+[Wed May 11 08:55:49 2022|TrainClassifier.py|INFO] epoch 16, iter 250, loss = 0.009042207151651382, lr=1.680306905370844e-06
+[Wed May 11 08:56:00 2022|TrainClassifier.py|INFO] epoch 16, iter 300, loss = 0.004177462309598923, lr=1.6163682864450127e-06
+[Wed May 11 08:56:11 2022|TrainClassifier.py|INFO] epoch 16, iter 350, loss = 0.004517625086009502, lr=1.5524296675191815e-06
+[Wed May 11 08:56:20 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 16:
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 82.61 | R: 86.93 | F1: 84.71
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 62.14 | R: 68.09 | F1: 64.97
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 68.33 | R: 59.42 | F1: 63.57
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 62.75 | R: 44.44 | F1: 52.03
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 50.00 | R: 25.00 | F1: 33.33
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 91.87 | R: 98.26 | F1: 94.96
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.89 | R: 97.56 | F1: 93.02
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 62.79 | R: 72.97 | F1: 67.50
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 85.94 | R: 96.49 | F1: 90.91
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 50.00 | R: 39.13 | F1: 43.90
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.74 | R: 79.03 | F1: 84.48
+[Wed May 11 08:56:23 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 78.78 | R: 78.78 | Micro F1: 78.78 | Macro F1: 66.83
+[Wed May 11 08:56:24 2022|TrainClassifier.py|INFO] epoch 17, iter 0, loss = 0.005047142505645752, lr=1.5e-06
+[Wed May 11 08:56:34 2022|TrainClassifier.py|INFO] epoch 17, iter 50, loss = 0.004780231975018978, lr=1.4360613810741688e-06
+[Wed May 11 08:56:46 2022|TrainClassifier.py|INFO] epoch 17, iter 100, loss = 0.006203965283930302, lr=1.3721227621483376e-06
+[Wed May 11 08:56:58 2022|TrainClassifier.py|INFO] epoch 17, iter 150, loss = 0.005127746611833572, lr=1.3081841432225064e-06
+[Wed May 11 08:57:09 2022|TrainClassifier.py|INFO] epoch 17, iter 200, loss = 0.005521571729332209, lr=1.2442455242966753e-06
+[Wed May 11 08:57:20 2022|TrainClassifier.py|INFO] epoch 17, iter 250, loss = 0.02187313698232174, lr=1.180306905370844e-06
+[Wed May 11 08:57:32 2022|TrainClassifier.py|INFO] epoch 17, iter 300, loss = 0.005098680034279823, lr=1.1163682864450129e-06
+[Wed May 11 08:57:43 2022|TrainClassifier.py|INFO] epoch 17, iter 350, loss = 0.005225821398198605, lr=1.0524296675191817e-06
+[Wed May 11 08:57:52 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 17:
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 83.12 | R: 86.93 | F1: 84.98
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 62.62 | R: 71.28 | F1: 66.67
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 70.00 | R: 60.87 | F1: 65.12
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 65.38 | R: 47.22 | F1: 54.84
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 92.62 | R: 98.26 | F1: 95.36
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 86.96 | R: 97.56 | F1: 91.95
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 63.64 | R: 75.68 | F1: 69.14
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.62 | R: 96.49 | F1: 90.16
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 56.25 | R: 39.13 | F1: 46.15
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.57 | R: 77.42 | F1: 83.48
+[Wed May 11 08:57:55 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 79.35 | R: 79.35 | Micro F1: 79.35 | Macro F1: 64.70
+[Wed May 11 08:57:55 2022|TrainClassifier.py|INFO] Saving model for checkpoint 17
+[Wed May 11 08:57:59 2022|TrainClassifier.py|INFO] epoch 18, iter 0, loss = 0.011087398044764996, lr=1.0000000000000002e-06
+[Wed May 11 08:58:11 2022|TrainClassifier.py|INFO] epoch 18, iter 50, loss = 0.006545873358845711, lr=9.36061381074169e-07
+[Wed May 11 08:58:23 2022|TrainClassifier.py|INFO] epoch 18, iter 100, loss = 0.00475228950381279, lr=8.721227621483376e-07
+[Wed May 11 08:58:34 2022|TrainClassifier.py|INFO] epoch 18, iter 150, loss = 0.004519249778240919, lr=8.081841432225064e-07
+[Wed May 11 08:58:45 2022|TrainClassifier.py|INFO] epoch 18, iter 200, loss = 0.004855009727180004, lr=7.442455242966752e-07
+[Wed May 11 08:58:56 2022|TrainClassifier.py|INFO] epoch 18, iter 250, loss = 0.008511016145348549, lr=6.80306905370844e-07
+[Wed May 11 08:59:08 2022|TrainClassifier.py|INFO] epoch 18, iter 300, loss = 0.0054808491840958595, lr=6.163682864450128e-07
+[Wed May 11 08:59:19 2022|TrainClassifier.py|INFO] epoch 18, iter 350, loss = 0.004159759730100632, lr=5.524296675191816e-07
+[Wed May 11 08:59:29 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 18:
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 83.12 | R: 86.93 | F1: 84.98
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 62.26 | R: 70.21 | F1: 66.00
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 67.19 | R: 62.32 | F1: 64.66
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 66.67 | R: 41.67 | F1: 51.28
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 100.00 | R: 25.00 | F1: 40.00
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 91.87 | R: 98.26 | F1: 94.96
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.89 | R: 97.56 | F1: 93.02
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 62.22 | R: 75.68 | F1: 68.29
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.62 | R: 96.49 | F1: 90.16
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 52.94 | R: 39.13 | F1: 45.00
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 88.89 | R: 77.42 | F1: 82.76
+[Wed May 11 08:59:33 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 79.01 | R: 79.01 | Micro F1: 79.01 | Macro F1: 67.47
+[Wed May 11 08:59:33 2022|TrainClassifier.py|INFO] epoch 19, iter 0, loss = 0.004402211867272854, lr=5.000000000000001e-07
+[Wed May 11 08:59:45 2022|TrainClassifier.py|INFO] epoch 19, iter 50, loss = 0.0041232844814658165, lr=4.360613810741688e-07
+[Wed May 11 08:59:56 2022|TrainClassifier.py|INFO] epoch 19, iter 100, loss = 0.005225080065429211, lr=3.721227621483376e-07
+[Wed May 11 09:00:07 2022|TrainClassifier.py|INFO] epoch 19, iter 150, loss = 0.003546720603480935, lr=3.081841432225064e-07
+[Wed May 11 09:00:19 2022|TrainClassifier.py|INFO] epoch 19, iter 200, loss = 0.005210965871810913, lr=2.442455242966752e-07
+[Wed May 11 09:00:31 2022|TrainClassifier.py|INFO] epoch 19, iter 250, loss = 0.008083384484052658, lr=1.8030690537084402e-07
+[Wed May 11 09:00:43 2022|TrainClassifier.py|INFO] epoch 19, iter 300, loss = 0.007525034248828888, lr=1.163682864450128e-07
+[Wed May 11 09:00:55 2022|TrainClassifier.py|INFO] epoch 19, iter 350, loss = 0.0036887340247631073, lr=5.242966751918159e-08
+[Wed May 11 09:01:05 2022|TrainClassifier.py|INFO] Evaluation Result on epoch 19:
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 比喻 | Num:  306 | P: 82.46 | R: 87.58 | F1: 84.94
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 比拟 | Num:   94 | P: 62.86 | R: 70.21 | F1: 66.33
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 借代 | Num:   69 | P: 68.25 | R: 62.32 | F1: 65.15
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 夸张 | Num:   72 | P: 70.45 | R: 43.06 | F1: 53.45
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 反语 | Num:    4 | P: 100.00 | R: 25.00 | F1: 40.00
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 通感 | Num:    6 | P: 100.00 | R: 16.67 | F1: 28.57
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 问语 | Num:  115 | P: 91.87 | R: 98.26 | F1: 94.96
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 排比 | Num:   41 | P: 88.89 | R: 97.56 | F1: 93.02
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 对偶 | Num:   37 | P: 63.64 | R: 75.68 | F1: 69.14
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 反复 | Num:   57 | P: 84.62 | R: 96.49 | F1: 90.16
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 对比 | Num:   23 | P: 52.94 | R: 39.13 | F1: 45.00
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] 引语 | Num:   62 | P: 90.57 | R: 77.42 | F1: 83.48
+[Wed May 11 09:01:09 2022|MetricForClassification.py|INFO] Overall performance | Total num:  886 | P: 79.35 | R: 79.35 | Micro F1: 79.35 | Macro F1: 67.85
+[Wed May 11 09:01:09 2022|main.py|INFO] Progress| Load Accelerator succeed!
+[Wed May 11 09:01:10 2022|TrainClassifier.py|INFO] Load best checkpoint from epoch 17
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 比喻 | Num:  683 | P: 83.40 | R: 88.29 | F1: 85.78
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 比拟 | Num:  243 | P: 66.27 | R: 67.90 | F1: 67.07
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 借代 | Num:  123 | P: 66.67 | R: 47.15 | F1: 55.24
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 夸张 | Num:  145 | P: 58.06 | R: 49.66 | F1: 53.53
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 反语 | Num:    5 | P: 50.00 | R: 40.00 | F1: 44.44
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 通感 | Num:   10 | P: 25.00 | R: 10.00 | F1: 14.29
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 问语 | Num:  202 | P: 92.89 | R: 97.03 | F1: 94.92
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 排比 | Num:   99 | P: 82.05 | R: 96.97 | F1: 88.89
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 对偶 | Num:   76 | P: 70.13 | R: 71.05 | F1: 70.59
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 反复 | Num:  105 | P: 90.65 | R: 92.38 | F1: 91.51
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 对比 | Num:   62 | P: 78.43 | R: 64.52 | F1: 70.80
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] 引语 | Num:  117 | P: 87.93 | R: 87.18 | F1: 87.55
+[Wed May 11 09:01:18 2022|MetricForClassification.py|INFO] Overall performance | Total num: 1870 | P: 79.47 | R: 79.47 | Micro F1: 79.47 | Macro F1: 68.72

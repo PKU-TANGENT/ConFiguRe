@@ -1,0 +1,9 @@
+task: "ClassificationContext"
+batch_size: 16
+classifier_lr: 1.e-4
+num_epochs: 30
+optimizer:
+  - params: "model.bert.parameters()"
+    lr: ${model_args.lr}
+  - params: "model.classifier.parameters()"
+    lr: ${model_args.classifier_lr}

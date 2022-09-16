@@ -1,0 +1,735 @@
+[Fri May 13 11:08:37 2022|main.py|INFO] Progress| Parse args succeed!
+[Fri May 13 11:08:38 2022|main.py|INFO] Progress| Load Bert config succeed!
+[Fri May 13 11:08:38 2022|main.py|INFO] Progress| Task setup succeed!
+[Fri May 13 11:08:45 2022|main.py|INFO] Progress| Load Bert tokenizer succeed!
+[Fri May 13 11:08:50 2022|DatasetForCRF.py|INFO] train size: 2934
+[Fri May 13 11:08:51 2022|DatasetForCRF.py|INFO] valid size: 419
+[Fri May 13 11:08:52 2022|DatasetForCRF.py|INFO] test size: 839
+[Fri May 13 11:09:14 2022|main.py|INFO] Progress| Load Bert model succeed!
+[Fri May 13 11:09:14 2022|main.py|INFO] Progress| Load Optimizer AdamW succeed!
+[Fri May 13 11:09:14 2022|main.py|INFO] Progress| Load Accelerator succeed!
+[Fri May 13 11:09:14 2022|TrainRecognitionCRF.py|INFO] Initial Evaluation Result
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P:  0.36 | R:  4.39 | F1:  0.66
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P:  0.12 | R:  7.21 | F1:  0.23
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:09:31 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P:  0.18 | R:  2.45 | Micro F1:  0.34  | Macro F1:  0.07
+[Fri May 13 11:09:31 2022|TrainRecognitionCRF.py|INFO] epoch 0, iter 0, loss = 157.41195678710938, lr=1e-05
+[Fri May 13 11:09:51 2022|TrainRecognitionCRF.py|INFO] epoch 0, iter 50, loss = 27.204444885253906, lr=9.909420289855073e-06
+[Fri May 13 11:10:11 2022|TrainRecognitionCRF.py|INFO] epoch 0, iter 100, loss = 22.067153930664062, lr=9.818840579710146e-06
+[Fri May 13 11:10:31 2022|TrainRecognitionCRF.py|INFO] epoch 0, iter 150, loss = 14.264575958251953, lr=9.728260869565218e-06
+[Fri May 13 11:10:44 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 0:
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:11:00 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P:  0.00 | R:  0.00 | Micro F1:  0.00  | Macro F1:  0.00
+[Fri May 13 11:11:00 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 0
+[Fri May 13 11:11:01 2022|TrainRecognitionCRF.py|INFO] epoch 1, iter 0, loss = 23.781543731689453, lr=9.666666666666667e-06
+[Fri May 13 11:11:21 2022|TrainRecognitionCRF.py|INFO] epoch 1, iter 50, loss = 23.389976501464844, lr=9.57608695652174e-06
+[Fri May 13 11:11:41 2022|TrainRecognitionCRF.py|INFO] epoch 1, iter 100, loss = 17.780963897705078, lr=9.485507246376812e-06
+[Fri May 13 11:12:02 2022|TrainRecognitionCRF.py|INFO] epoch 1, iter 150, loss = 10.550344467163086, lr=9.394927536231884e-06
+[Fri May 13 11:12:15 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 1:
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 34.58 | R: 28.04 | F1: 30.97
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 100.00 | R:  0.90 | F1:  1.79
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:12:28 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 34.85 | R:  9.79 | Micro F1: 15.29  | Macro F1:  2.73
+[Fri May 13 11:12:28 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 1
+[Fri May 13 11:12:33 2022|TrainRecognitionCRF.py|INFO] epoch 2, iter 0, loss = 17.525344848632812, lr=9.333333333333334e-06
+[Fri May 13 11:12:53 2022|TrainRecognitionCRF.py|INFO] epoch 2, iter 50, loss = 18.323490142822266, lr=9.242753623188406e-06
+[Fri May 13 11:13:13 2022|TrainRecognitionCRF.py|INFO] epoch 2, iter 100, loss = 13.788671493530273, lr=9.15217391304348e-06
+[Fri May 13 11:13:33 2022|TrainRecognitionCRF.py|INFO] epoch 2, iter 150, loss = 8.88961410522461, lr=9.061594202898552e-06
+[Fri May 13 11:13:46 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 2:
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 40.59 | R: 37.16 | F1: 38.80
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 31.25 | R:  9.01 | F1: 13.99
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 41.67 | R:  8.06 | F1: 13.51
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:14:01 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 39.43 | R: 14.57 | Micro F1: 21.28  | Macro F1:  5.53
+[Fri May 13 11:14:01 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 2
+[Fri May 13 11:14:05 2022|TrainRecognitionCRF.py|INFO] epoch 3, iter 0, loss = 12.902871131896973, lr=9e-06
+[Fri May 13 11:14:25 2022|TrainRecognitionCRF.py|INFO] epoch 3, iter 50, loss = 15.157678604125977, lr=8.909420289855074e-06
+[Fri May 13 11:14:45 2022|TrainRecognitionCRF.py|INFO] epoch 3, iter 100, loss = 12.207515716552734, lr=8.818840579710146e-06
+[Fri May 13 11:15:05 2022|TrainRecognitionCRF.py|INFO] epoch 3, iter 150, loss = 7.179390907287598, lr=8.728260869565218e-06
+[Fri May 13 11:15:18 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 3:
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 42.41 | R: 41.55 | F1: 41.98
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 25.00 | R: 18.02 | F1: 20.94
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 25.00 | R: 14.63 | F1: 18.46
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 100.00 | R:  2.94 | F1:  5.71
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 17.24 | R:  9.09 | F1: 11.90
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 33.33 | R: 17.74 | F1: 23.16
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:15:33 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 36.32 | R: 19.35 | Micro F1: 25.25  | Macro F1: 10.18
+[Fri May 13 11:15:33 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 3
+[Fri May 13 11:15:37 2022|TrainRecognitionCRF.py|INFO] epoch 4, iter 0, loss = 10.1000394821167, lr=8.666666666666668e-06
+[Fri May 13 11:15:57 2022|TrainRecognitionCRF.py|INFO] epoch 4, iter 50, loss = 12.584482192993164, lr=8.57608695652174e-06
+[Fri May 13 11:16:18 2022|TrainRecognitionCRF.py|INFO] epoch 4, iter 100, loss = 11.143045425415039, lr=8.485507246376812e-06
+[Fri May 13 11:16:38 2022|TrainRecognitionCRF.py|INFO] epoch 4, iter 150, loss = 6.441784858703613, lr=8.394927536231885e-06
+[Fri May 13 11:16:51 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 4:
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 43.24 | R: 43.24 | F1: 43.24
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 25.26 | R: 21.62 | F1: 23.30
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 28.21 | R: 26.83 | F1: 27.50
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 22.22 | R:  5.88 | F1:  9.30
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 24.44 | R: 20.00 | F1: 22.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 37.84 | R: 22.58 | F1: 28.28
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:17:05 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 36.47 | R: 22.14 | Micro F1: 27.56  | Macro F1: 12.80
+[Fri May 13 11:17:05 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 4
+[Fri May 13 11:17:10 2022|TrainRecognitionCRF.py|INFO] epoch 5, iter 0, loss = 8.869609832763672, lr=8.333333333333334e-06
+[Fri May 13 11:17:30 2022|TrainRecognitionCRF.py|INFO] epoch 5, iter 50, loss = 10.318015098571777, lr=8.242753623188406e-06
+[Fri May 13 11:17:50 2022|TrainRecognitionCRF.py|INFO] epoch 5, iter 100, loss = 10.144014358520508, lr=8.15217391304348e-06
+[Fri May 13 11:18:10 2022|TrainRecognitionCRF.py|INFO] epoch 5, iter 150, loss = 6.124357223510742, lr=8.061594202898551e-06
+[Fri May 13 11:18:23 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 5:
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 37.31 | R: 42.23 | F1: 39.62
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 33.33 | R:  2.22 | F1:  4.17
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 17.91 | R: 21.62 | F1: 19.59
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 23.81 | R: 24.39 | F1: 24.10
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 16.67 | R: 11.76 | F1: 13.79
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 15.79 | R: 16.36 | F1: 16.07
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 28.57 | R:  9.52 | F1: 14.29
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 30.23 | R: 20.97 | F1: 24.76
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:18:38 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 29.12 | R: 22.03 | Micro F1: 25.08  | Macro F1: 13.03
+[Fri May 13 11:18:38 2022|TrainRecognitionCRF.py|INFO] epoch 6, iter 0, loss = 7.807038307189941, lr=8.000000000000001e-06
+[Fri May 13 11:18:58 2022|TrainRecognitionCRF.py|INFO] epoch 6, iter 50, loss = 8.648513793945312, lr=7.909420289855073e-06
+[Fri May 13 11:19:18 2022|TrainRecognitionCRF.py|INFO] epoch 6, iter 100, loss = 8.94582462310791, lr=7.818840579710145e-06
+[Fri May 13 11:19:38 2022|TrainRecognitionCRF.py|INFO] epoch 6, iter 150, loss = 5.113428115844727, lr=7.728260869565219e-06
+[Fri May 13 11:19:51 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 6:
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 38.92 | R: 46.28 | F1: 42.28
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 20.00 | R:  2.22 | F1:  4.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 100.00 | R:  1.45 | F1:  2.86
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 16.88 | R: 23.42 | F1: 19.62
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 19.51 | R: 19.51 | F1: 19.51
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 13.79 | R: 11.76 | F1: 12.70
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 22.41 | R: 23.64 | F1: 23.01
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 20.00 | R:  9.52 | F1: 12.90
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 31.91 | R: 24.19 | F1: 27.52
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:20:06 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 29.55 | R: 24.24 | Micro F1: 26.63  | Macro F1: 13.70
+[Fri May 13 11:20:06 2022|TrainRecognitionCRF.py|INFO] epoch 7, iter 0, loss = 6.941937446594238, lr=7.666666666666667e-06
+[Fri May 13 11:20:27 2022|TrainRecognitionCRF.py|INFO] epoch 7, iter 50, loss = 7.641927719116211, lr=7.57608695652174e-06
+[Fri May 13 11:20:47 2022|TrainRecognitionCRF.py|INFO] epoch 7, iter 100, loss = 8.290861129760742, lr=7.485507246376812e-06
+[Fri May 13 11:21:06 2022|TrainRecognitionCRF.py|INFO] epoch 7, iter 150, loss = 4.654353141784668, lr=7.3949275362318855e-06
+[Fri May 13 11:21:20 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 7:
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 39.06 | R: 47.64 | F1: 42.92
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 18.75 | R:  3.33 | F1:  5.66
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 80.00 | R:  5.80 | F1: 10.81
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 20.14 | R: 26.13 | F1: 22.75
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 18.75 | R: 21.95 | F1: 20.22
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P:  9.38 | R:  8.82 | F1:  9.09
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 20.34 | R: 21.82 | F1: 21.05
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 15.38 | R:  9.52 | F1: 11.76
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 28.57 | R: 22.58 | F1: 25.23
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:21:34 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 29.69 | R: 25.29 | Micro F1: 27.31  | Macro F1: 14.12
+[Fri May 13 11:21:35 2022|TrainRecognitionCRF.py|INFO] epoch 8, iter 0, loss = 5.6376848220825195, lr=7.333333333333333e-06
+[Fri May 13 11:21:55 2022|TrainRecognitionCRF.py|INFO] epoch 8, iter 50, loss = 6.380903244018555, lr=7.242753623188407e-06
+[Fri May 13 11:22:15 2022|TrainRecognitionCRF.py|INFO] epoch 8, iter 100, loss = 7.743494987487793, lr=7.152173913043479e-06
+[Fri May 13 11:22:35 2022|TrainRecognitionCRF.py|INFO] epoch 8, iter 150, loss = 4.110101699829102, lr=7.061594202898551e-06
+[Fri May 13 11:22:48 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 8:
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 37.12 | R: 45.27 | F1: 40.79
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 12.20 | R:  5.56 | F1:  7.63
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 55.56 | R:  7.25 | F1: 12.82
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  7.14 | R:  1.45 | F1:  2.41
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 18.06 | R: 25.23 | F1: 21.05
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 21.74 | R: 24.39 | F1: 22.99
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 17.39 | R: 23.53 | F1: 20.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 20.00 | R: 20.00 | F1: 20.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 10.00 | R:  9.52 | F1:  9.76
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 34.09 | R: 24.19 | F1: 28.30
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:23:03 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.69 | R: 25.52 | Micro F1: 26.56  | Macro F1: 15.48
+[Fri May 13 11:23:03 2022|TrainRecognitionCRF.py|INFO] epoch 9, iter 0, loss = 5.912651062011719, lr=7e-06
+[Fri May 13 11:23:23 2022|TrainRecognitionCRF.py|INFO] epoch 9, iter 50, loss = 4.337818145751953, lr=6.9094202898550735e-06
+[Fri May 13 11:23:43 2022|TrainRecognitionCRF.py|INFO] epoch 9, iter 100, loss = 7.158132553100586, lr=6.818840579710145e-06
+[Fri May 13 11:24:03 2022|TrainRecognitionCRF.py|INFO] epoch 9, iter 150, loss = 4.180790901184082, lr=6.728260869565217e-06
+[Fri May 13 11:24:16 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 9:
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 35.81 | R: 45.61 | F1: 40.12
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  6.45 | R:  4.44 | F1:  5.26
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 26.67 | R:  5.80 | F1:  9.52
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 15.79 | R:  4.35 | F1:  6.82
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 24.46 | R: 30.63 | F1: 27.20
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 24.39 | R: 24.39 | F1: 24.39
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 19.51 | R: 23.53 | F1: 21.33
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 19.67 | R: 21.82 | F1: 20.69
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  9.52 | R:  9.52 | F1:  9.52
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 26.00 | R: 20.97 | F1: 23.21
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:24:30 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.24 | R: 26.22 | Micro F1: 26.72  | Macro F1: 15.67
+[Fri May 13 11:24:31 2022|TrainRecognitionCRF.py|INFO] epoch 10, iter 0, loss = 5.477629661560059, lr=6.666666666666667e-06
+[Fri May 13 11:24:51 2022|TrainRecognitionCRF.py|INFO] epoch 10, iter 50, loss = 4.450410842895508, lr=6.57608695652174e-06
+[Fri May 13 11:25:11 2022|TrainRecognitionCRF.py|INFO] epoch 10, iter 100, loss = 6.370489597320557, lr=6.485507246376812e-06
+[Fri May 13 11:25:31 2022|TrainRecognitionCRF.py|INFO] epoch 10, iter 150, loss = 4.181537628173828, lr=6.394927536231884e-06
+[Fri May 13 11:25:44 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 10:
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 35.68 | R: 44.59 | F1: 39.64
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  7.79 | R:  6.67 | F1:  7.19
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 16.67 | R:  7.25 | F1: 10.10
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 12.20 | R:  7.25 | F1:  9.09
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 19.63 | R: 28.83 | F1: 23.36
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 26.47 | R: 21.95 | F1: 24.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 17.31 | R: 26.47 | F1: 20.93
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 22.41 | R: 23.64 | F1: 23.01
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  2.13 | R:  4.76 | F1:  2.94
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 28.00 | R: 22.58 | F1: 25.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:26:00 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 24.51 | R: 26.34 | Micro F1: 25.39  | Macro F1: 15.44
+[Fri May 13 11:26:00 2022|TrainRecognitionCRF.py|INFO] epoch 11, iter 0, loss = 4.966830253601074, lr=6.333333333333333e-06
+[Fri May 13 11:26:20 2022|TrainRecognitionCRF.py|INFO] epoch 11, iter 50, loss = 3.9562110900878906, lr=6.242753623188407e-06
+[Fri May 13 11:26:40 2022|TrainRecognitionCRF.py|INFO] epoch 11, iter 100, loss = 5.936211585998535, lr=6.152173913043479e-06
+[Fri May 13 11:27:00 2022|TrainRecognitionCRF.py|INFO] epoch 11, iter 150, loss = 3.131100654602051, lr=6.061594202898551e-06
+[Fri May 13 11:27:13 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 11:
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 38.37 | R: 44.59 | F1: 41.25
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  9.84 | R:  6.67 | F1:  7.95
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 12.12 | R:  5.80 | F1:  7.84
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P:  8.93 | R:  7.25 | F1:  8.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 24.00 | R: 32.43 | F1: 27.59
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 30.00 | R: 21.95 | F1: 25.35
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 20.93 | R: 26.47 | F1: 23.38
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 22.58 | R: 25.45 | F1: 23.93
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  7.69 | R:  9.52 | F1:  8.51
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 27.91 | R: 19.35 | F1: 22.86
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:27:27 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.00 | R: 26.69 | Micro F1: 26.85  | Macro F1: 16.39
+[Fri May 13 11:27:27 2022|TrainRecognitionCRF.py|INFO] epoch 12, iter 0, loss = 4.172417640686035, lr=6e-06
+[Fri May 13 11:27:47 2022|TrainRecognitionCRF.py|INFO] epoch 12, iter 50, loss = 3.6326303482055664, lr=5.909420289855074e-06
+[Fri May 13 11:28:07 2022|TrainRecognitionCRF.py|INFO] epoch 12, iter 100, loss = 4.785365581512451, lr=5.818840579710146e-06
+[Fri May 13 11:28:28 2022|TrainRecognitionCRF.py|INFO] epoch 12, iter 150, loss = 2.85343074798584, lr=5.7282608695652176e-06
+[Fri May 13 11:28:41 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 12:
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 40.79 | R: 41.89 | F1: 41.33
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 10.64 | R:  5.56 | F1:  7.30
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 14.00 | R: 10.14 | F1: 11.76
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 10.53 | R:  5.80 | F1:  7.48
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 19.89 | R: 32.43 | F1: 24.66
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 24.24 | R: 19.51 | F1: 21.62
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 20.00 | R: 20.59 | F1: 20.29
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 24.56 | R: 25.45 | F1: 25.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  9.52 | R:  9.52 | F1:  9.52
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 37.21 | R: 25.81 | F1: 30.48
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:28:56 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.56 | R: 25.99 | Micro F1: 26.75  | Macro F1: 16.62
+[Fri May 13 11:28:56 2022|TrainRecognitionCRF.py|INFO] epoch 13, iter 0, loss = 3.8756580352783203, lr=5.666666666666667e-06
+[Fri May 13 11:29:16 2022|TrainRecognitionCRF.py|INFO] epoch 13, iter 50, loss = 3.4594907760620117, lr=5.576086956521739e-06
+[Fri May 13 11:29:36 2022|TrainRecognitionCRF.py|INFO] epoch 13, iter 100, loss = 4.481219291687012, lr=5.485507246376812e-06
+[Fri May 13 11:29:56 2022|TrainRecognitionCRF.py|INFO] epoch 13, iter 150, loss = 2.4391698837280273, lr=5.394927536231884e-06
+[Fri May 13 11:30:09 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 13:
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 39.26 | R: 43.24 | F1: 41.16
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 13.21 | R:  7.78 | F1:  9.79
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 19.51 | R: 11.59 | F1: 14.55
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 10.71 | R:  8.70 | F1:  9.60
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 20.00 | R: 35.14 | F1: 25.49
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 30.00 | R: 21.95 | F1: 25.35
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 25.00 | R: 20.59 | F1: 22.58
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 25.00 | R: 29.09 | F1: 26.89
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 10.53 | R:  9.52 | F1: 10.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 32.43 | R: 19.35 | F1: 24.24
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:30:22 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.56 | R: 27.27 | Micro F1: 27.42  | Macro F1: 17.47
+[Fri May 13 11:30:23 2022|TrainRecognitionCRF.py|INFO] epoch 14, iter 0, loss = 3.362051010131836, lr=5.333333333333334e-06
+[Fri May 13 11:30:43 2022|TrainRecognitionCRF.py|INFO] epoch 14, iter 50, loss = 2.911198616027832, lr=5.2427536231884056e-06
+[Fri May 13 11:31:03 2022|TrainRecognitionCRF.py|INFO] epoch 14, iter 100, loss = 3.830972671508789, lr=5.152173913043479e-06
+[Fri May 13 11:31:23 2022|TrainRecognitionCRF.py|INFO] epoch 14, iter 150, loss = 1.8611583709716797, lr=5.061594202898551e-06
+[Fri May 13 11:31:36 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 14:
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 37.46 | R: 40.88 | F1: 39.10
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 14.29 | R:  7.78 | F1: 10.07
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P:  9.09 | R:  5.80 | F1:  7.08
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 11.11 | R:  7.25 | F1:  8.77
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 17.45 | R: 33.33 | F1: 22.91
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 27.27 | R: 21.95 | F1: 24.32
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 25.81 | R: 23.53 | F1: 24.62
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 24.24 | R: 29.09 | F1: 26.45
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 10.00 | R:  9.52 | F1:  9.76
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 35.14 | R: 20.97 | F1: 26.26
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:31:51 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 25.81 | R: 25.87 | Micro F1: 25.84  | Macro F1: 16.61
+[Fri May 13 11:31:52 2022|TrainRecognitionCRF.py|INFO] epoch 15, iter 0, loss = 3.0687341690063477, lr=5e-06
+[Fri May 13 11:32:12 2022|TrainRecognitionCRF.py|INFO] epoch 15, iter 50, loss = 2.3582754135131836, lr=4.909420289855073e-06
+[Fri May 13 11:32:31 2022|TrainRecognitionCRF.py|INFO] epoch 15, iter 100, loss = 3.80191707611084, lr=4.818840579710145e-06
+[Fri May 13 11:32:52 2022|TrainRecognitionCRF.py|INFO] epoch 15, iter 150, loss = 1.8925542831420898, lr=4.728260869565218e-06
+[Fri May 13 11:33:05 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 15:
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 39.38 | R: 42.57 | F1: 40.91
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 18.37 | R: 10.00 | F1: 12.95
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 13.79 | R: 11.59 | F1: 12.60
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 16.67 | R:  8.70 | F1: 11.43
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 16.67 | R: 34.23 | F1: 22.42
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 24.14 | R: 17.07 | F1: 20.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 32.00 | R: 23.53 | F1: 27.12
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 22.58 | R: 25.45 | F1: 23.93
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 11.11 | R:  9.52 | F1: 10.26
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 37.14 | R: 20.97 | F1: 26.80
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:33:19 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 26.86 | R: 26.92 | Micro F1: 26.89  | Macro F1: 17.37
+[Fri May 13 11:33:20 2022|TrainRecognitionCRF.py|INFO] epoch 16, iter 0, loss = 2.9670372009277344, lr=4.666666666666667e-06
+[Fri May 13 11:33:40 2022|TrainRecognitionCRF.py|INFO] epoch 16, iter 50, loss = 1.767801284790039, lr=4.57608695652174e-06
+[Fri May 13 11:34:00 2022|TrainRecognitionCRF.py|INFO] epoch 16, iter 100, loss = 3.6001243591308594, lr=4.485507246376812e-06
+[Fri May 13 11:34:19 2022|TrainRecognitionCRF.py|INFO] epoch 16, iter 150, loss = 1.963479995727539, lr=4.3949275362318846e-06
+[Fri May 13 11:34:33 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 16:
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 36.09 | R: 41.22 | F1: 38.49
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 18.75 | R: 10.00 | F1: 13.04
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 12.50 | R:  5.80 | F1:  7.92
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 13.89 | R:  7.25 | F1:  9.52
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 22.50 | R: 32.43 | F1: 26.57
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 24.14 | R: 17.07 | F1: 20.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 21.05 | R: 23.53 | F1: 22.22
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 24.64 | R: 30.91 | F1: 27.42
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P: 18.18 | R:  9.52 | F1: 12.50
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 36.11 | R: 20.97 | F1: 26.53
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:34:48 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.98 | R: 25.99 | Micro F1: 26.95  | Macro F1: 17.02
+[Fri May 13 11:34:48 2022|TrainRecognitionCRF.py|INFO] epoch 17, iter 0, loss = 2.5917234420776367, lr=4.333333333333334e-06
+[Fri May 13 11:35:08 2022|TrainRecognitionCRF.py|INFO] epoch 17, iter 50, loss = 1.7645196914672852, lr=4.242753623188406e-06
+[Fri May 13 11:35:28 2022|TrainRecognitionCRF.py|INFO] epoch 17, iter 100, loss = 3.143265724182129, lr=4.1521739130434786e-06
+[Fri May 13 11:35:48 2022|TrainRecognitionCRF.py|INFO] epoch 17, iter 150, loss = 1.8539161682128906, lr=4.061594202898551e-06
+[Fri May 13 11:36:01 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 17:
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 36.26 | R: 43.24 | F1: 39.45
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 11.39 | R: 10.00 | F1: 10.65
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 13.33 | R:  8.70 | F1: 10.53
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 12.82 | R:  7.25 | F1:  9.26
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 22.75 | R: 34.23 | F1: 27.34
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 29.63 | R: 19.51 | F1: 23.53
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 24.14 | R: 20.59 | F1: 22.22
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 25.76 | R: 30.91 | F1: 28.10
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  7.14 | R:  4.76 | F1:  5.71
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 35.00 | R: 22.58 | F1: 27.45
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:36:18 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 27.09 | R: 27.16 | Micro F1: 27.12  | Macro F1: 17.02
+[Fri May 13 11:36:19 2022|TrainRecognitionCRF.py|INFO] epoch 18, iter 0, loss = 2.262990951538086, lr=4.000000000000001e-06
+[Fri May 13 11:36:39 2022|TrainRecognitionCRF.py|INFO] epoch 18, iter 50, loss = 1.3339109420776367, lr=3.9094202898550726e-06
+[Fri May 13 11:36:59 2022|TrainRecognitionCRF.py|INFO] epoch 18, iter 100, loss = 2.7470569610595703, lr=3.818840579710145e-06
+[Fri May 13 11:37:19 2022|TrainRecognitionCRF.py|INFO] epoch 18, iter 150, loss = 1.6280202865600586, lr=3.7282608695652177e-06
+[Fri May 13 11:37:32 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 18:
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 35.56 | R: 43.24 | F1: 39.02
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 10.59 | R: 10.00 | F1: 10.29
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 16.67 | R:  8.70 | F1: 11.43
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 16.22 | R:  8.70 | F1: 11.32
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 28.79 | R: 34.23 | F1: 31.28
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 28.57 | R: 24.39 | F1: 26.32
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 23.53 | R: 23.53 | F1: 23.53
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 23.88 | R: 29.09 | F1: 26.23
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  6.67 | R:  4.76 | F1:  5.56
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 36.11 | R: 20.97 | F1: 26.53
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:37:46 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 28.08 | R: 27.39 | Micro F1: 27.73  | Macro F1: 17.62
+[Fri May 13 11:37:46 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 18
+[Fri May 13 11:37:50 2022|TrainRecognitionCRF.py|INFO] epoch 19, iter 0, loss = 2.5392189025878906, lr=3.6666666666666666e-06
+[Fri May 13 11:38:10 2022|TrainRecognitionCRF.py|INFO] epoch 19, iter 50, loss = 1.9250402450561523, lr=3.5760869565217393e-06
+[Fri May 13 11:38:30 2022|TrainRecognitionCRF.py|INFO] epoch 19, iter 100, loss = 2.6298389434814453, lr=3.485507246376812e-06
+[Fri May 13 11:38:50 2022|TrainRecognitionCRF.py|INFO] epoch 19, iter 150, loss = 1.285944938659668, lr=3.3949275362318844e-06
+[Fri May 13 11:39:02 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 19:
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 36.46 | R: 44.59 | F1: 40.12
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 10.99 | R: 11.11 | F1: 11.05
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 17.14 | R:  8.70 | F1: 11.54
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 12.24 | R:  8.70 | F1: 10.17
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 30.30 | R: 36.04 | F1: 32.92
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 32.35 | R: 26.83 | F1: 29.33
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 25.00 | R: 23.53 | F1: 24.24
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 21.54 | R: 25.45 | F1: 23.33
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  6.67 | R:  4.76 | F1:  5.56
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 35.14 | R: 20.97 | F1: 26.26
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:39:17 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 28.29 | R: 28.09 | Micro F1: 28.19  | Macro F1: 17.88
+[Fri May 13 11:39:17 2022|TrainRecognitionCRF.py|INFO] Saving model for checkpoint 19
+[Fri May 13 11:39:22 2022|TrainRecognitionCRF.py|INFO] epoch 20, iter 0, loss = 2.3095626831054688, lr=3.3333333333333333e-06
+[Fri May 13 11:39:42 2022|TrainRecognitionCRF.py|INFO] epoch 20, iter 50, loss = 1.3967571258544922, lr=3.242753623188406e-06
+[Fri May 13 11:40:02 2022|TrainRecognitionCRF.py|INFO] epoch 20, iter 100, loss = 2.90863037109375, lr=3.152173913043479e-06
+[Fri May 13 11:40:22 2022|TrainRecognitionCRF.py|INFO] epoch 20, iter 150, loss = 1.325800895690918, lr=3.061594202898551e-06
+[Fri May 13 11:40:35 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 20:
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 35.84 | R: 41.89 | F1: 38.63
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 11.34 | R: 12.22 | F1: 11.76
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 11.76 | R:  5.80 | F1:  7.77
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 14.29 | R:  8.70 | F1: 10.81
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 27.27 | R: 35.14 | F1: 30.71
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 34.48 | R: 24.39 | F1: 28.57
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 21.88 | R: 20.59 | F1: 21.21
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 16.95 | R: 18.18 | F1: 17.54
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  9.09 | R:  9.52 | F1:  9.30
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 33.33 | R: 22.58 | F1: 26.92
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:40:53 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 26.83 | R: 26.46 | Micro F1: 26.64  | Macro F1: 16.94
+[Fri May 13 11:40:53 2022|TrainRecognitionCRF.py|INFO] epoch 21, iter 0, loss = 2.1486968994140625, lr=3e-06
+[Fri May 13 11:41:13 2022|TrainRecognitionCRF.py|INFO] epoch 21, iter 50, loss = 1.6155376434326172, lr=2.909420289855073e-06
+[Fri May 13 11:41:33 2022|TrainRecognitionCRF.py|INFO] epoch 21, iter 100, loss = 2.2689027786254883, lr=2.818840579710145e-06
+[Fri May 13 11:41:53 2022|TrainRecognitionCRF.py|INFO] epoch 21, iter 150, loss = 0.980076789855957, lr=2.7282608695652175e-06
+[Fri May 13 11:42:06 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 21:
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 37.06 | R: 42.57 | F1: 39.62
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P:  9.43 | R: 11.11 | F1: 10.20
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 14.55 | R: 11.59 | F1: 12.90
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 11.76 | R:  8.70 | F1: 10.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 25.00 | R: 32.43 | F1: 28.24
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 30.95 | R: 31.71 | F1: 31.33
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 17.86 | R: 14.71 | F1: 16.13
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 24.62 | R: 29.09 | F1: 26.67
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  5.00 | R:  4.76 | F1:  4.88
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 28.85 | R: 24.19 | F1: 26.32
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:42:21 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 26.11 | R: 27.51 | Micro F1: 26.79  | Macro F1: 17.19
+[Fri May 13 11:42:21 2022|TrainRecognitionCRF.py|INFO] epoch 22, iter 0, loss = 1.7504816055297852, lr=2.666666666666667e-06
+[Fri May 13 11:42:41 2022|TrainRecognitionCRF.py|INFO] epoch 22, iter 50, loss = 1.351689338684082, lr=2.5760869565217396e-06
+[Fri May 13 11:43:01 2022|TrainRecognitionCRF.py|INFO] epoch 22, iter 100, loss = 2.0321035385131836, lr=2.485507246376812e-06
+[Fri May 13 11:43:21 2022|TrainRecognitionCRF.py|INFO] epoch 22, iter 150, loss = 1.0335731506347656, lr=2.3949275362318842e-06
+[Fri May 13 11:43:34 2022|TrainRecognitionCRF.py|INFO] Evaluation Result on epoch 22:
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-比喻 | Num:  296 | P: 37.46 | R: 42.91 | F1: 40.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-比喻 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-比拟 | Num:   90 | P: 10.48 | R: 12.22 | F1: 11.28
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-比拟 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-借代 | Num:   69 | P: 10.81 | R:  5.80 | F1:  7.55
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-借代 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-夸张 | Num:   69 | P: 13.64 | R:  8.70 | F1: 10.62
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-夸张 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-反语 | Num:    4 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-反语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-通感 | Num:    6 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-通感 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-问语 | Num:  111 | P: 28.37 | R: 36.04 | F1: 31.75
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-问语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-排比 | Num:   41 | P: 28.95 | R: 26.83 | F1: 27.85
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-排比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-对偶 | Num:   34 | P: 18.18 | R: 17.65 | F1: 17.91
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-对偶 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-反复 | Num:   55 | P: 18.03 | R: 20.00 | F1: 18.97
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-反复 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-对比 | Num:   21 | P:  4.35 | R:  4.76 | F1:  4.55
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-对比 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] B-引语 | Num:   62 | P: 30.23 | R: 20.97 | F1: 24.76
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] I-引语 | Num:    0 | P:  0.00 | R:  0.00 | F1:  0.00
+[Fri May 13 11:43:51 2022|MetricForRecognitionCRF.py|INFO] Overall performance | Total num:  858 | P: 26.62 | R: 26.81 | Micro F1: 26.71  | Macro F1: 16.27
+[Fri May 13 11:43:51 2022|TrainRecognitionCRF.py|INFO] epoch 23, iter 0, loss = 1.4293956756591797, lr=2.3333333333333336e-06
+[Fri May 13 11:44:11 2022|TrainRecognitionCRF.py|INFO] epoch 23, iter 50, loss = 1.6077651977539062, lr=2.242753623188406e-06
