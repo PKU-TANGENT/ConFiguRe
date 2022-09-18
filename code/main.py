@@ -23,15 +23,6 @@ def setup_logger(args):
     sHandler.setFormatter(formatter)
     logger.addHandler(sHandler)
 
-    # FileHandler
-    # work_dir = "./Log"
-    # if not os.path.exists(work_dir):
-        # os.makedirs(work_dir)
-    # fHandler = logging.FileHandler(os.path.join(work_dir, f"{args.task}.{args.arch_name}.log"), mode='w')
-    # fHandler.setLevel(logging.DEBUG)  
-    # fHandler.setFormatter(formatter)  
-    # logger.addHandler(fHandler)  
-
     return logger
 
 def sanity_check(args, data_x, data_y, data_x_emb, tokenizer):
@@ -69,24 +60,7 @@ def main(cfg:DictConfig):
         os.makedirs(args.save_dir)
     random.seed(args.seed)
     torch.manual_seed(args.seed)
-    # Get args
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("--data_path", default="./Data/fig_dataset.json", type=str)
-    # parser.add_argument("--train_data_path", default="./Data/train.json", type=str)
-    # parser.add_argument("--valid_data_path", default="./Data/valid.json", type=str)
-    # parser.add_argument("--test_data_path", default="./Data/test.json", type=str)
-    # parser.add_argument("--model_name_or_path", default="hfl/chinese-roberta-wwm-ext", type=str)
-    # parser.add_argument("--save_dir", default="./Checkpoints", type=str)
-    # parser.add_argument("--arch_name", default="bert", type=str) # architect_name
-    # parser.add_argument("--lr", default=1e-5) 
-    # parser.add_argument("--batch_size", default=32, type=int) 
-    # parser.add_argument("--eval_batch_size", default=1, type=int) 
-    # parser.add_argument("--num_epochs", default=20, type=int) 
-    # parser.add_argument("--num_labels", default=13, type=int) 
-    # parser.add_argument("--task", default="Classification", type=str) 
-    # parser.add_argument("--contrast_lambda", default=1, type=float) 
-    # parser.add_argument("--label_pad_id", default=-1, type=int)
-    # args = parser.parse_args()
+    
     # Get accelerator
     task_setup = getattr(importlib.import_module(f"..{args.task}", package="task.subpkg"), "task_setup")
     accelerator = Accelerator()
