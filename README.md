@@ -126,7 +126,7 @@ Useful scripts are under the `code/scripts` folder.
 Navigate to `code/` folder, and run the scripts, eg.
 ```bash
 # cd code
-bash run.sh
+bash scripts/run.sh
 ```
 ## Experimental Results
 <p align="center">

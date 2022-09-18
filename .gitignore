@@ -162,6 +162,5 @@ cython_debug/
 
 # Customized items
 checkpoints/
-log/
 hydra_outputs/
 .idea/
