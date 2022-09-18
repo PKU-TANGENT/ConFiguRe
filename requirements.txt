@@ -5,6 +5,7 @@ torch==1.11.0+cu113
 transformers==4.18.0
 datasets==2.1.0
 huggingface-hub==0.5.1
+accelerate==0.7.1
 # for debugging purposes only, uncommente the following line
 # debugpy==1.6.0
 hydra-core==1.1.2

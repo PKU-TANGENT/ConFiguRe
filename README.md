@@ -60,20 +60,88 @@ conda env create -n configure python=3.8.13 -y
 pip install -r requirements.txt
 ```
 ## Code Layout
+We provide a general overview of our code repo. For detailed annotation, please refer to the comments in each file.
+```bash
+/
+├── configs/ # yaml style configs
+│   ├── accelerate_config.yaml # sample config for huggingface accelerate module
+│   ├── default.yaml # default training config
+│   ├── hydra/
+│   │   └── job_logging/
+│   │       └── custom.yaml # handles auto logging
+│   └── model_args/ # task specific config
+│       ├── Classification.yaml
+│       ├── ClassificationContext.yaml
+│       ├── CRF.yaml
+│       ├── End2end.yaml
+│       └── Extraction.yaml
+├── cut_sent.py # logic for cutting out figurative unit 
+├── dataset/ # handles dataset loading
+│   ├── __init__.py
+│   ├── DatasetForClassification.py
+│   ├── DatasetForClassificationContext.py
+│   ├── DatasetForCRF.py
+│   ├── DatasetForExtraction.py
+│   └── DatasetForRecognition.py
+├── main.py # template for training
+├── metrics/ # handles metric calculation
+│   ├── __init__.py
+│   ├── MetricForClassification.py
+│   ├── MetricForExtraction.py
+│   ├── MetricForRecognition.py
+│   └── MetricForRecognitionCRF.py
+├── model/ # implementation for models, including forward logic
+│   ├── __init__.py
+│   ├── BertForFigClassification.py
+│   ├── BertForFigClassificationContext.py
+│   ├── BertForFigExtraction.py
+│   ├── BertForFigExtractionContrast.py
+│   ├── BertForFigRecognition.py
+│   └── BertForFigRecognitionCRF.py
+├── scripts/ # helpful scripts
+│   ├── debug_hydra.sh
+│   ├── eval.sh
+│   └── run.sh
+├── task/ # task specific logic, called in `main.py`
+│   ├── __init__.py
+│   ├── Classification.py
+│   ├── ClassificationContext.py
+│   ├── CRF.py
+│   ├── End2end.py
+│   ├── Extraction.py
+│   ├── ExtractionContrast.py
+│   └── ExtractionCRF.py
+└── train/ # Trainer-like module, handles training + eval steps
+    ├── __init__.py
+    ├── TrainClassifier.py
+    ├── TrainExtraction.py
+    ├── TrainRecognition.py
+    └── TrainRecognitionCRF.py
+```
 ### Hydra Config
 We leverage the [hydra module](https://hydra.cc/) to store hyperparameters with respect to each model, to enable auto-logging and to modularize our repo. It is helpful to have a basic idea of the hydra configuration style. 
+### Scripts
+Useful scripts are under the `code/scripts` folder. 
 
+Navigate to `code/` folder, and run the scripts, eg.
+```bash
+# cd code
+bash run.sh
+```
 ## Experimental Results
 
 ## Citation
 
 If you use ConFiguRe in your work, please cite our paper:
 
-## Connection
+## Contact
 
-If you have any questions, feel free to contact
+If you have any questions, feel free to open an issue, or contact
 
 - [dwzhu@pku.edu.cn;](mailto:dwzhu@pku.edu.cn)
 
 - [lisujian@pku.edu.cn;](mailto:lisujian@pku.edu.cn)
 
+For implementation details
+
+- [zhouzhejian@pku.edu.cn;](mailto:zhouzhejian@pku.edu.cn)

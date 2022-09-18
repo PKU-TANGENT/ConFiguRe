@@ -1,3 +1,10 @@
+# This implementation of CRF is based on code fragments at
+# https://github.com/lonePatient/BERT-NER-Pytorch/blob/bc9276185539c59bbd3d310ea808fea2b618fedf/models/layers/crf.pyhttps://github.com/lonePatient/BERT-NER-Pytorch 
+# as well as
+# PyTorch official CRF tutorials at 
+# https://pytorch.org/tutorials/beginner/nlp/advanced_tutorial.html#sphx-glr-beginner-nlp-advanced-tutorial-py
+# Note: During our inspection of previous implementation, we notice the undue `negation` of final `loss` and have made necessary accomodations.
+# For mathematical details, it is helpful to refer to http://www.cs.columbia.edu/~mcollins/crf.pdf
 from transformers.models.bert.modeling_bert import *
 import torch
 from torch import nn
