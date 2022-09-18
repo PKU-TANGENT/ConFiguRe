@@ -1,7 +1,6 @@
 from transformers.models.bert.modeling_bert import *
 
 
-
 def batched_index_select(input, dim, index):
     """
     helper function for batched index select

@@ -81,10 +81,10 @@ def main(cfg:DictConfig):
         args.model_name_or_path, add_special_tokens=False, model_max_length=512)
     args.logger.info("Progress| Load Bert tokenizer succeed!")
 
-    load_dataset = getattr(importlib.import_module(f"..{args.task_dict['dataset']}" ,package="dataset.subpkg"), "load_dataset")
+    load_dataset = getattr(importlib.import_module(f"..{args.task_dict['dataset']}", package="dataset.subpkg"), "load_dataset")
     train_dataset, valid_dataset, test_dataset = load_dataset(args, tokenizer)
 
-    fig_collate_fn = getattr(importlib.import_module(f"..{args.task_dict['dataset']}" ,package="dataset.subpkg"), "fig_collate_fn")
+    fig_collate_fn = getattr(importlib.import_module(f"..{args.task_dict['dataset']}", package="dataset.subpkg"), "fig_collate_fn")
     train_dataloader = DataLoader(
         train_dataset, collate_fn=fig_collate_fn, batch_size=args.batch_size)
     
@@ -113,7 +113,6 @@ def main(cfg:DictConfig):
 
     args.logger.info("Progress| Load Optimizer AdamW succeed!")
 
-    
     train_dataloader, valid_dataloader, model, optimizer = accelerator.prepare(
         train_dataloader, valid_dataloader, model, optimizer
     )
@@ -129,6 +128,7 @@ def main(cfg:DictConfig):
     args.logger.info("Progress| Train Complete!")
     evaluation = getattr(importlib.import_module(f"..{args.task_dict['train']}" , package="train.subpkg"), "evaluation")
     evaluation(args, model, test_dataloader, -1, Metric,  os.path.join(args.save_dir, f"{args.task}_{args.arch_name}_ckp_best.pt"))
+
 
 if __name__ == "__main__":
     main()

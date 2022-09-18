@@ -129,7 +129,9 @@ Navigate to `code/` folder, and run the scripts, eg.
 bash run.sh
 ```
 ## Experimental Results
-
+<p align="center">
+  <img src="./graphs/mainResults.png" width="700" alt="statistics">
+</p>
 ## Citation
 
 If you use ConFiguRe in your work, please cite our paper:

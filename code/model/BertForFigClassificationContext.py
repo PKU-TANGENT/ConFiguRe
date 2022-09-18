@@ -1,8 +1,7 @@
 from transformers.models.bert.modeling_bert import *
-import numpy as np  
+
 
 class BertForFigClassificationContext(BertPreTrainedModel):
-
 
     def __init__(self, config):
         super().__init__(config)
@@ -30,7 +29,6 @@ class BertForFigClassificationContext(BertPreTrainedModel):
         output_attentions: Optional[bool] = None,
         output_hidden_states: Optional[bool] = None,
         return_dict: Optional[bool] = None,
-        epoch_num = None,
         input_ids2: Optional[torch.Tensor] = None,
         attention_mask2: Optional[torch.Tensor] = None,
         token_type_ids2: Optional[torch.Tensor] = None,
@@ -72,7 +70,6 @@ class BertForFigClassificationContext(BertPreTrainedModel):
         context_pooled_output = self.dropout(context_pooled_output)
 
         logits = self.classifier(torch.concat((fig_pooled_output, context_pooled_output), dim=-1))
-
 
         loss = None
         if labels is not None:
