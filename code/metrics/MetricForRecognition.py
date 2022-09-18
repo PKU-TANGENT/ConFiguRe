@@ -57,16 +57,6 @@ class MetricForRecognition:
                 st_idx = i
                 if i == pred_list_len - 1:
                     fig_list.append((i, i, self.figs.index(self.id2lb[pred_list[i]][2:])))
-            
-            
-
-            # if pred_list[i] == prev:
-            #     if i == pred_list_len - 1 and pred_list[i] != self.lb2id["O"]:
-            #         fig_list.append((prev_idx, i, pred_list[i]))
-            # else:
-            #     if prev != self.lb2id["O"]:
-            #         fig_list.append((prev_idx, i-1, prev))
-            #     prev, prev_idx = pred_list[i], i
 
         return fig_list
 

@@ -56,14 +56,6 @@ class BertForFigClassification(BertPreTrainedModel):
 
         logits = self.classifier(pooled_output)
 
-        # if epoch_num is not None and epoch_num % 3 == 0:
-        #     with open(f"./Vectors/fig_embed_epoch{epoch_num}.txt",'a') as fout:
-        #         np.savetxt(fout, pooled_output.cpu().numpy(), fmt="%.3f")
-
-        #     with open(f"./Vectors/fig_label_epoch{epoch_num}.txt",'a') as fout:
-        #         np.savetxt(fout, labels.cpu().numpy(), fmt="%.3f")
-
-
         loss = None
         if labels is not None:
             loss_fct = CrossEntropyLoss()

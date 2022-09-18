@@ -86,18 +86,6 @@ class MetricForRecognitionCRF:
             if not self.id2lb[pred_list[prev_idx]].startswith("B-"):
                 break
             fig_list.append((prev_idx, cur_idx-1, pred_list[prev_idx]))
-            # cur_idx +=1
-
-        # for i in range(pred_list_len):
-        #     if self.id2lb[pred_list[i]].startswith("I") and pred_list[i] == prev + 1: # prev should be B-
-        #         if i == pred_list_len - 1 and pred_list[i] != self.lb2id["O"]:
-        #             fig_list.append((prev_idx, i, pred_list[i]))
-        #     elif prev == self.lb2id["O"] and pred_list[i] != self.lb2id["O"]:
-        #         fig_list.append((i, i, pred_list[i]))
-        #     else:
-        #         if prev != self.lb2id["O"]:
-        #             fig_list.append((prev_idx, i-1, prev))
-        #         prev, prev_idx = pred_list[i], i
 
         return fig_list
 

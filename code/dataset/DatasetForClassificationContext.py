@@ -63,7 +63,6 @@ def merge_data(key: str, data_list):
     val_list = list()
     maxlen = 0
 
-    # TODO check the id of [PAD] and token_type
     key2pad = {"input_ids": 0, "token_type_ids": 0, "attention_mask": 0,
                "labels": -1, "input_ids2": 0, "token_type_ids2": 0, "attention_mask2": 0}
 

@@ -43,7 +43,7 @@ A sample data point in the json file is as follows:
 ConFiguRe includes 4,192 fragments and 9,010 figurative units. Train, valid and test set is split according to the proportion of 7:1:2. Detailed information for each figure type is demonstrated below:
 
 <p align="center">
-  <img src="./figures/corpusInfo.png" width="450" alt="statistics">
+  <img src="./graphs/corpusInfo.png" width="450" alt="statistics">
 </p>
 
 ## Environment
