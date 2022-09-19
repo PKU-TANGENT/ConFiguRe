@@ -75,7 +75,7 @@ We provide a general overview of our code repo. For detailed annotation, please 
 │       ├── CRF.yaml
 │       ├── End2end.yaml
 │       └── Extraction.yaml
-├── cut_sent.py # logic for cutting out figurative unit 
+├── delimit_clause.py # logic for delimiting clauses, which would serve as basis for `figurative unit`
 ├── dataset/ # handles dataset loading
 │   ├── __init__.py
 │   ├── DatasetForClassification.py

@@ -8,27 +8,14 @@ import numpy as np
 import os
 import re
 import json
-from cut_sent import cut_len, cut_sent
-
+from delimit_clause import delimit_clause
+from functools import reduce
 punc_list = ["。", "！", "？", "，", "；", ",", "?", "!", "——", ";", ":", "："]
-
-
-def get_span_list(text: str):
-
-    # res_list = list()
-    # prev = 0
-    # for idx, token in enumerate(text):
-    #     if token in punc_list:
-    #         res_list.append(text[prev:idx+1])
-    #         prev = idx+1
-
-    res_list = cut_sent(text)
-
-    return res_list
 
 # functions that overwrites ends with "_"
 
-def overwrite_fig_label_(args, text_list, unit, labels, sent_pos):
+
+def overwrite_fig_label_(unit, labels, sent_pos):
     # suppose that len(labels) = L -> len(sent_pos) = L+1
     # tmp_start is valid in [0, L-1] 
     # sent_pos marks the start idx of each sentence, while the last element should be excluded
@@ -38,12 +25,12 @@ def overwrite_fig_label_(args, text_list, unit, labels, sent_pos):
     while tmp_start < len(labels) - 1 and sent_pos[tmp_start] < fig_start:
         tmp_start += 1
     tmp_end = tmp_start + 1# tmp end marks the start of the next sentence
-    # tmp_end can take values in [tmp_start, L] 
+    # tmp_end can take values in [tmp_start + 1, L]
     while tmp_end < len(labels) and sent_pos[tmp_end] < fig_end:
         tmp_end += 1
-    # tmp_end = max(tmp_end, tmp_start+1)
-    # tmp_end = min(tmp_end, len(sent_pos))
+
     labels[tmp_start] = "B-" + fig_name
+    # the following logic is safe, since labels[tmp_end] will not be accessed
     labels[tmp_start+1:tmp_end] = ["I-" + fig_name] * (tmp_end-tmp_start-1)
 
 
@@ -58,32 +45,32 @@ def get_data(args, split):
 
     with open(data_path, 'r', encoding="utf-8") as fin:
         data = json.load(fin)
+    data_list = [data[i] for i in data]
+    data = None
 
-    x_list = list()  # list of contexts, each element is a context (type of which is string)
-    y_list = list()  # list of labels, each element is a list of labels
-    sent_pos_list = list()
+    def reduce_helper_func(to_update_list, x):
+        now = to_update_list[0]
+        to_update_list[now+1] += x + to_update_list[now]
+        to_update_list[0]+=1
+        return to_update_list
 
-    for key in data:
-        val = data[key]
-        content = val["fragment"].strip()
-        span_list = get_span_list(content)
+    def helper_function(data_item):
+        content = data_item["fragment"].strip()
+        span_list = delimit_clause(content)
         labels = ["O"] * len(span_list)
-        sent_len = [len(x) for x in span_list]
-        sent_pos = [0]
-        cur_pos = 0
-        for item in sent_len:
-            sent_pos.append(cur_pos + item)
-            cur_pos += item
-        # overwrite labels according to fig units
-        for unit in val["units"]:
-            overwrite_fig_label_(args, span_list, unit, labels, sent_pos)
+        sent_len = map(len, span_list)
+        # note that the first element is used for tmp counting inside reduce
+        sent_pos = [0] * (len(span_list) + 1)
+        sent_pos = [0] + reduce(reduce_helper_func, sent_len, sent_pos)[1:]
+        def overwrite_helper_function(labels, x):
+            overwrite_fig_label_(x, labels, sent_pos)
+            return labels
+        labels = reduce(overwrite_helper_function, data_item["units"], labels)
+        return span_list, labels, sent_pos
 
-        x_list.append(span_list)
-        y_list.append(labels)
-        sent_pos_list.append(sent_pos)
-
+    data_list = list(map(helper_function, data_list))
+    x_list, y_list, sent_pos_list = list(zip(*data_list))
     return x_list, y_list, sent_pos_list
-
 
 class FigDataset(torch.utils.data.Dataset):
     def __init__(self, encodings, labels, sent_pos, sent_ori_len):

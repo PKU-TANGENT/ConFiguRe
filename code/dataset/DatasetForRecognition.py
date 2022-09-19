@@ -8,7 +8,7 @@ import numpy as np
 import os
 import re
 import json
-from cut_sent import cut_len, cut_sent
+from delimit_clause import delimit_clause
 from functools import reduce
 punc_list = ["。", "！", "？", "，", "；", ",", "?", "!", "——", ";", ":", "："]
 
@@ -16,18 +16,21 @@ punc_list = ["。", "！", "？", "，", "；", ",", "?", "!", "——", ";", ":
 
 
 def overwrite_fig_label_(unit, labels, sent_pos):
-
+    # suppose that len(labels) = L -> len(sent_pos) = L+1
+    # tmp_start is valid in [0, L-1] 
+    # sent_pos marks the start idx of each sentence, while the last element should be excluded
     fig_name = unit["fos"]
     fig_start, fig_end = unit["begin"], unit["end"]
     tmp_start = 0
     while tmp_start < len(labels) - 1 and sent_pos[tmp_start] < fig_start:
         tmp_start += 1
     tmp_end = tmp_start + 1# tmp end marks the start of the next sentence
-
+    # tmp_end can take values in [tmp_start + 1, L]
     while tmp_end < len(labels) and sent_pos[tmp_end] < fig_end:
         tmp_end += 1
 
     labels[tmp_start] = "B-" + fig_name
+    # the following logic is safe, since labels[tmp_end] will not be accessed
     labels[tmp_start+1:tmp_end] = ["I-" + fig_name] * (tmp_end-tmp_start-1)
 
 
@@ -45,22 +48,15 @@ def get_data(args, split):
     data_list = [data[i] for i in data]
     data = None
 
-    # x_list = list()  # list of contexts, each element is a context (type of which is string)
-    # y_list = list()  # list of labels, each element is a list of labels
-    # sent_pos_list = list()
     def reduce_helper_func(to_update_list, x):
         now = to_update_list[0]
         to_update_list[now+1] += x + to_update_list[now]
         to_update_list[0]+=1
         return to_update_list
-    
-
-
-
 
     def helper_function(data_item):
         content = data_item["fragment"].strip()
-        span_list = cut_sent(content)
+        span_list = delimit_clause(content)
         labels = ["O"] * len(span_list)
         sent_len = map(len, span_list)
         # note that the first element is used for tmp counting inside reduce
@@ -75,29 +71,6 @@ def get_data(args, split):
     data_list = list(map(helper_function, data_list))
     x_list, y_list, sent_pos_list = list(zip(*data_list))
     return x_list, y_list, sent_pos_list
-
-
-    # for key in data:
-    #     val = data[key]
-    #     content = val["fragment"].strip()
-    #     span_list = cut_sent(content)
-    #     labels = ["O"] * len(span_list)
-    #     sent_len = [len(x) for x in span_list]
-    #     sent_pos = [0]
-    #     cur_pos = 0
-    #     for item in sent_len:
-    #         sent_pos.append(cur_pos + item)
-    #         cur_pos += item
-    #     # overwrite labels according to fig units
-    #     for unit in val["units"]:
-    #         overwrite_fig_label_(args, span_list, unit, labels, sent_pos)
-
-    #     x_list.append(span_list)
-    #     y_list.append(labels)
-    #     sent_pos_list.append(sent_pos)
-
-    return x_list, y_list, sent_pos_list
-
 
 class FigDataset(torch.utils.data.Dataset):
     def __init__(self, encodings, labels, sent_pos, sent_ori_len):
@@ -126,7 +99,7 @@ class FigDataset(torch.utils.data.Dataset):
                     sent_ids[reverse_offset[self.sent_pos[i][j]]:] = cur_sent_id
                     break
                 else:
-                    sent_ids[reverse_offset[self.sent_pos[i][j]]                             :reverse_offset[self.sent_pos[i][j+1]-1]+1] = cur_sent_id
+                    sent_ids[reverse_offset[self.sent_pos[i][j]]:reverse_offset[self.sent_pos[i][j+1]-1]+1] = cur_sent_id
                     cur_sent_id += 1
             self.sent_ids.append(sent_ids)
 

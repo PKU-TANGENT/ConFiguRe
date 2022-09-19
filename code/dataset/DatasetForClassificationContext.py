@@ -1,5 +1,19 @@
+from functools import reduce
 import torch
 import json
+
+def reduce_helper_func(x_ctxt_y_list, val):
+    fig_list = val["units"]
+    fragment = val["fragment"]
+    def map_helper_func(fig):
+        st = fig["begin"]
+        ed = fig["end"]
+        return (fig["figurativeUnit"], fragment[max(0, st-50):min(len(fig["figurativeUnit"]),ed+50)], fig["fos"])
+    to_extend_x, to_extend_ctxt, to_extend_y = zip(*map(map_helper_func, fig_list))
+    x_ctxt_y_list[0].extend(to_extend_x)
+    x_ctxt_y_list[1].extend(to_extend_ctxt)
+    x_ctxt_y_list[2].extend(to_extend_y)
+    return x_ctxt_y_list
 
 
 def get_data(args, split):
@@ -13,23 +27,12 @@ def get_data(args, split):
 
     with open(data_path, 'r', encoding="utf-8") as fin:
         data = json.load(fin)
+    data_list = [data[i] for i in data]
+    x_ctxt_y_list = [[], [], []]
 
-    x_list = list()  # list of figurative units, each element is a string
-    ctxt_list = list()
-    y_list = list()  # list of fig_types, each element is a string
+    x_ctxt_y_list = reduce(reduce_helper_func, data_list, x_ctxt_y_list)
 
-    for key in data:
-        val = data[key]
-        fragment = val["fragment"]
-        fig_list = val["units"]
-        for fig in fig_list:
-            x_list.append(fig["figurativeUnit"])
-            st = fig["begin"]
-            ed = fig["end"]
-            ctxt_list.append(fragment[max(0, st-50):min(len(fig["figurativeUnit"]),ed+50)])
-            y_list.append(fig["fos"])
-
-    return (x_list, ctxt_list), y_list
+    return (x_ctxt_y_list[0], x_ctxt_y_list[1]), x_ctxt_y_list[2]
 
 
 class FigDataset(torch.utils.data.Dataset):
