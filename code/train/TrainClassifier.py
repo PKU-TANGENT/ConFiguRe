@@ -62,7 +62,7 @@ def evaluation(args, model, eval_dataloader, epoch_num, Metric, ckp_path=None):
     for batch in eval_dataloader:
         batch = {k: v.to(args.device) for k, v in batch.items()}
         with torch.no_grad():
-            outputs = model(**batch, epoch_num=epoch_num)
+            outputs = model(**batch)
         logits = outputs.logits
         preds = torch.argmax(logits, dim=-1)  # bsz * seq_len
         preds = preds.view(-1, 1).squeeze(dim=-1)
