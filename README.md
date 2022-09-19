@@ -137,6 +137,19 @@ bash scripts/run.sh
 
 If you use ConFiguRe in your work, please cite our paper:
 
+```bibtex
+@misc{https://doi.org/10.48550/arxiv.2209.07678,
+  doi = {10.48550/ARXIV.2209.07678},
+  url = {https://arxiv.org/abs/2209.07678},
+  author = {Zhu, Dawei and Zhan, Qiusi and Zhou, Zhejian and Song, Yifan and Zhang, Jiebin and Li, Sujian},
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {ConFiguRe: Exploring Discourse-level Chinese Figures of Speech},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+```
+
 ## Contact
 
 If you have any questions, feel free to open an issue, or contact
