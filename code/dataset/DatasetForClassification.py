@@ -1,6 +1,15 @@
 import torch
 import json
+from functools import reduce
 
+def map_helper_func(fig):
+    return (fig["figurativeUnit"], fig["fos"])
+
+def reduce_helper_func(x_and_y_list, fig_list):
+    to_extend_x, to_extend_y = zip(*map(map_helper_func, fig_list))
+    x_and_y_list[0].extend(to_extend_x)
+    x_and_y_list[1].extend(to_extend_y)
+    return x_and_y_list
 
 def get_data(args, split):
     data_path = None
@@ -13,19 +22,13 @@ def get_data(args, split):
 
     with open(data_path, 'r', encoding="utf-8") as fin:
         data = json.load(fin)
+    data_list = [data[i]["units"] for i in data]
+    data = None
 
-    x_list = list()  # list of figurative units, each element is a string
-    y_list = list()  # list of fig_types, each element is a string
+    x_and_y_list = [[],[]]
+    x_and_y_list = reduce(reduce_helper_func, data_list, x_and_y_list)
 
-    for key in data:
-        val = data[key]
-        fragment = val["fragment"]
-        fig_list = val["units"]
-        for fig in fig_list:
-            x_list.append(fig["figurativeUnit"])
-            y_list.append(fig["fos"])
-
-    return x_list, y_list
+    return x_and_y_list[0], x_and_y_list[1] 
 
 
 class FigDataset(torch.utils.data.Dataset):
