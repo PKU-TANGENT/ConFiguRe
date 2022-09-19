@@ -1,5 +1,5 @@
 # ConFiguRe
-
+ 
 This repository presents the dataset and baseline implementation for the COLING 2022 long paper (oral): "ConFiguRe: Exploring Discourse-level Chinese Figures of Speech".
 
 ## Overview
